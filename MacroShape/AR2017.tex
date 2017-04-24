@@ -6,7 +6,8 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{setspace}
-\doublespacing
+\usepackage{float}
+
 %\usepackage[active,tightpage]{preview}
 \usepackage{natbib}
 \bibpunct{(}{)}{,}{a}{}{;} 
@@ -27,11 +28,12 @@
 }
 \begin{document}
 
-\title{Macro patterns in the shape of aging}
+%\title{Macro patterns in the shape of aging}
+\title{Macro shapes in the evolution of human aging}
 
 \author[1]{Tim Riffe\thanks{riffe@demogr.mpg.de}}
-\author[2,3]{Jos\'e Manuel Aburto}
-\affil[1]{Department of Demography, University of California, Berkeley}
+\author[2,3]{Jos\'e Manuel Aburto \thanks{jmaburto@health.sdu.dk}}
+\affil[1]{Max Planck Institute for Demographic Research}
 \affil[2]{University of Southern Denmark}
 \affil[3]{Max Planck Odense Center on the Biodemography of Aging}
 
@@ -43,18 +45,18 @@
 
 \section*{Extended abstract}
 
-Typically demographers summarize the distribution of remaining
-lifetimes by age using the mean, $e(a)$. However, remaining life
-expectancy is not an omnibus descriptor of time to death. There are other
-useful measures of longevity, such as the modal or median ages at death, and demographers also have a battery of
-indicators for lifespan variability or entropy. One aspect in common for many
-such indicators is that they refer to the age distribution of mortality in a snapshot of a stationary population or else the age at death distribution of a newborn cohort under constant mortality
-conditions. These measures are not typically made conditional on survival to
-later ages, i.e., demographers seldom consider the properties of the
-age-conditioned distribution of remaining lifetimes. 
+\doublespacing
 
-Life expectancy at birth, $e(0)$ is one of the most widely used measures to
-summarize population health. Its significant and consistent increase witnessed during the last two centuries is one of the most remarkable achievements of modern societies. Most countries have improved in this indicator, and the most long-lived populations have steadily increased their average length of life by 2.5 years every decade. However, life expectancy conceals uncertainty surrounding lifetimes, a dimension of population health that expresses the ultimate difference in survivorship among individuals. Variation in lifespans has recently arisen as an important dimension in aging and health research since it addresses the growing interest in health inequalities, and its linkage with social behavior. It has been found to be negatively associated with life expectancy levels in several countries and over millions of years of primate evolution. Although the degree of the correlation varies between publications, partly because of the data and measures used, the basic finding of a strong association is supported.  For instance, the joint rise of life expectancy and lifespan equality can be described by a straight line from average lifetimes below three years, during mortality crises such as famines and epidemics, to almost 90 years in the most longlived populations, such as contemporary Japanese women.
+Typically, demographers summarize the distribution of remaining
+lifetimes by age using the mean, $e(a)$, i.e. life expectancy. Life expectancy at birth, $e(0)$ is one of the most widely used measures to
+summarize population health. Its significant and consistent increase witnessed during the last two centuries is one of the most remarkable achievements of modern societies \citep{oeppen2002broken}. Most countries have improved in this indicator \citep{world2016world}, and the most long-lived populations have steadily increased their average length of life by 2.5 years every decade \citep{oeppen2002broken}. Nevertheless, life
+expectancy is not an omnibus descriptor of time to death. There are other
+useful measures of longevity the refer to the pace of aging, such as the modal or median ages at death \citep{canudas2010three}, that also summarize the distribution of mortality in a snapshot of a stationary population or else the age at death distribution of a newborn cohort under constant mortality
+conditions. These indicators, however, conceal variation in lifetimes and other aspects of the age at death distribution. 
+
+Variation in lifespans has recently arisen as an important dimension in demography and aging research. It expresses a fundamental inequality among individuals and addresses the growing interest in health inequalities, and its linkage with social behavior \citep{mackenbach2012persistence}. It has been found to be negatively associated with life expectancy levels in several countries and over millions of years of primate evolution \citep{vaupel2011life, colchero2016emergence}. As a result, demographers have responded to this need of accurate measures and have developed a battery of lifespan variability indicators \citep{van2013perturbation}, which refer to particular aspects of the shape of the distribution of mortality or the shape of aging \citep{wrycza2015quantifying}. 
+
+In this paper, we extend on previous research by developing a set of formulas to measure other aspects of the age at death distribution from lifetables conditioned on surviving to any age, such as skewness and kurtosis, from a moment generator function. Further, we explore linkages between such indicators and the pace of aging from a macro shape framework and interpret our results on the evolution of aging context.
 
 \subsection*{Definitions}
 
@@ -124,28 +126,39 @@ we show a series of bivariate relationships.
 
 \FloatBarrier
 \section*{Preliminary Results}
-Note: need to arrange these to economize space
+% next steps, mayble show conditional on surviving to age 15, 50 and 65?
+Figure \ref{fig:CV} shows the linkage between life expectancy at birth and  variation in lifespans, as measured by the coefficient of variation for 45 countries. Lighter colors refer to data before 1921, darker reds to years between 1921 and 1959, and darkest hues to the most recent period from 1960 onward. The results suggest that as populations tend to live longer, they also experience less uncertainty surrounding their eventual time of death. After 1960, there is a change in the slope and a level-off on the speed of reducing variability, as the coefficient of variation asymptotically reaches zero, the unrealistic scenario in which everybody dies at the same age.
 \begin{figure}
-\caption{Log Keyfitz entropy by average length of life}
+\caption{Coefficient of variation by average length of life}
 \centering
-\includegraphics[scale=.5]{Figures/F3_Lifespan_equality}
+\includegraphics[width=.3\textwidth]{Figures/Figure_CV}
+\label{fig:CV}
 \end{figure}
 
-\begin{figure}
-\caption{Skewness at birth by average length of life}
-\centering
-\includegraphics[scale=.5]{Figures/F2_Skew}
-\end{figure}
+Figure \ref{fig:sk&kt} shows the skewness of the age at death distribution and its linkage with the evolution of life expectancy (panel \ref{fig:sk}) and its corresponding kurtosis value (panel \ref{fig:sk}). Before 1960, the macro pattern of life expectancy with skewness suggest that as the average length of life increases over time, the distribution of mortality gets a longer left tail. However, after 1960 populations seem to have experienced a shift on the value of skewness, known in.. (insert tims concept). This might be a result of countries changing from a bimodal to a unimodal distribution. In addition, as mortality reductions are harder at young ages, improvements are gradually concentrated at older ages, which makes the right tail of the distribution longer. Similarly, as life expectancy increases, the value of kurtosis also increases. However, after 1960 similar values of life expectancy correspond to different values in kurtosis. These results suggest that over time, the tails of the distribution are getting ``fatter'', paralleling the rise in life expectancy. 
+
+Future results: we will further compare linkages between different moments conditioned on surviving to higher ages. For example, what are the macro association between these indicators conditioned on surviving to age 15, leaving out all infant mortality and capturing 
 
 \begin{figure}
-\caption{Kurtosis at birth by average length of life}
-\centering
-\includegraphics[scale=.5]{Figures/F1_Kurtosis}
+\caption{Skewness and kurtosis at birth by average length of life}
+\centering{
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{Figures/F2_Skew}
+  \caption{Skewness vs $e(0)$}
+  \label{fig:sk}
+\end{subfigure}
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{Figures/F1_Kurtosis}
+  \caption{Kurtosis vs $e(0)$}
+  \label{fig:kurt}
+\end{subfigure}}
+\label{fig:sk&kt}
 \end{figure}
 
 \FloatBarrier
-\section*{Discussion}
-
+\singlespacing
 \bibliographystyle{plainnat}
   \bibliography{references} 
 
