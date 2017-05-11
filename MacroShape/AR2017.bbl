@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Canudas-Romo(2010)]{canudas2010three}
+Vladimir Canudas-Romo.
+\newblock Three measures of longevity: Time trends and record values.
+\newblock \emph{Demography}, 47\penalty0 (2):\penalty0 299--312, 2010.
+
+\bibitem[Chiang(1984)]{chiang1984life}
+Chin~Long Chiang.
+\newblock \emph{The life table and its applications}.
+\newblock Malabar Fla Robert E. Krieger Publishing 1984., 1984.
+\newblock Chapter 10, Equation 6.10.
+
+\bibitem[Colchero et~al.(2016)Colchero, Rau, Jones, Barthold, Conde, Lenart,
+  Nemeth, Scheuerlein, Schoeley, Torres, et~al.]{colchero2016emergence}
+Fernando Colchero, Roland Rau, Owen~R Jones, Julia~A Barthold, Dalia~A Conde,
+  Adam Lenart, Laszlo Nemeth, Alexander Scheuerlein, Jonas Schoeley, Catalina
+  Torres, et~al.
+\newblock The emergence of longevous populations.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 113\penalty0
+  (48):\penalty0 E7681--E7690, 2016.
+
+\bibitem[{Human Mortality Database}()]{HMD}
+{Human Mortality Database}.
+\newblock {{University of California, Berkeley (USA)}} and {Max Planck
+  Institute for Demographic Research (Germany)}.
+\newblock Available at www.mortality.org or www.humanmortality.de (data
+  downloaded on 17 April, 2017).
+
+\bibitem[Mackenbach(2012)]{mackenbach2012persistence}
+Johan~P Mackenbach.
+\newblock The persistence of health inequalities in modern welfare states: the
+  explanation of a paradox.
+\newblock \emph{Social science \& medicine}, 75\penalty0 (4):\penalty0
+  761--769, 2012.
+
+\bibitem[Oeppen and Vaupel(2002)]{oeppen2002broken}
+Jim Oeppen and James~W Vaupel.
+\newblock Broken limits to life expectancy.
+\newblock \emph{Science}, 296\penalty0 (5570):\penalty0 1029--1031, 2002.
+
+\bibitem[{R Core Team}(2016)]{R}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+\newblock URL \url{https://www.R-project.org/}.
+
+\bibitem[van Raalte and Caswell(2013)]{van2013perturbation}
+Alyson~A van Raalte and Hal Caswell.
+\newblock Perturbation analysis of indices of lifespan variability.
+\newblock \emph{Demography}, 50\penalty0 (5):\penalty0 1615--1640, 2013.
+
+\bibitem[Vaupel et~al.(2011)Vaupel, Zhang, and van Raalte]{vaupel2011life}
+James~W Vaupel, Zhen Zhang, and Alyson~A van Raalte.
+\newblock Life expectancy and disparity: an international comparison of life
+  table data.
+\newblock \emph{BMJ open}, 1\penalty0 (1):\penalty0 e000128, 2011.
+
+\bibitem[Wrycza et~al.(2015)Wrycza, Missov, and
+  Baudisch]{wrycza2015quantifying}
+Tomasz~F Wrycza, Trifon~I Missov, and Annette Baudisch.
+\newblock Quantifying the shape of aging.
+\newblock \emph{PloS one}, 10\penalty0 (3):\penalty0 e0119163, 2015.
+
+\end{thebibliography}
