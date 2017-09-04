@@ -142,7 +142,7 @@ dev.off()
 # grid from here. You could save these as pdf frames if you wanted.
 
 pdf(file="Presentation/Figures/Fig5.pdf",width=8,height=6,pointsize=4)
-for (i in seq(0,100,by=5)){
+for (i in seq(0,100,by=10)){
 	ind_i <- Dat$Sex == "m" & Dat$Age == i & Dat$Year >= 1950 & Dat$Year <= 1954
 	
 	plot(Dat[ind_i,"ex"], Dat[ind_i,"SD"], pch = 16, col = "#11111130",
@@ -172,18 +172,18 @@ dev.off()
 # on standard scale on the Lexis grid. Note: each slope y axis
 # is on a non-age scale, but the slope is drawn centered on the
 # age group
-par(xaxs = 'i', yaxs = 'i')
 
 
-pdf(file="Presentation/Figures/Fig6.pdf",width=6,height=6)
 
-pdf(file="Presentation/Figures/Fig7.pdf",width=6,height=6)
 
+pdf(file="Presentation/Figures/Fig6.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
 plot(NULL, 
 		type = "n", 
 		xlim = c(1950, 2015),
 		ylim = c(0,100),
-		xlab = "Year", ylab = "Age",main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		xlab = "Year", ylab = "Age"
+,#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
 		asp = 1,
 		las = 1,
 		panel.first = list(
@@ -192,8 +192,25 @@ plot(NULL,
                 abline(h=seq(0,100,by=5),col="white"))
 
 )
+dev.off()
 
-#dev.off()
+# --------------------
+pdf(file="Presentation/Figures/Fig7.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
+plot(NULL, 
+		type = "n", 
+		xlim = c(1950, 2015),
+		ylim = c(0,100),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		asp = 1,
+		las = 1,
+		panel.first = list(
+				rect(1950,0,2015,100,col=gray(.8), border = NA),
+				abline(v=seq(1950,2015,by=5),col="white"),
+				abline(h=seq(0,100,by=5),col="white"))
+
+)
 
 for (i in 1:20){
 	draw_slope(
@@ -203,18 +220,18 @@ for (i in 1:20){
 			lim = lim * .5,
 			pad = .5)
 }
-#dev.off()
+dev.off()
 
 # ------------------------------------
 # A full Lexis field (on same grid)
-pdf(file="Presentation/Figures/Fig8.pdf",width=6,height=6)
-
-par(xaxs = 'i', yaxs = 'i')
+pdf(file="Presentation/Figures/Fig8.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
 plot(NULL, 
 		type = "n", 
 		xlim = c(1950, 2015),
 		ylim = c(0,100),
-		xlab = "Year", ylab = "Age",main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
 		asp = 1,
 		las = 1,
 		panel.first = list(
@@ -238,13 +255,14 @@ dev.off()
 # for example, sign switching over time in ages 40-50
 # less steep in age 0 over time, less steep in age 80
 # over time, etc
-pdf(file="Presentation/Figures/Fig9.pdf",width=6,height=6)
-par(xaxs = 'i', yaxs = 'i')
+pdf(file="Presentation/Figures/Fig9.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
 plot(NULL, 
 		type = "n", 
 		xlim = c(1950, 2015),
 		ylim = c(0,100),
-		xlab = "Year", ylab = "Age",main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
 		asp = 1,
 		las = 1
 )
@@ -263,20 +281,22 @@ dev.off()
 # find crossover in each year for males
 llm1 <- DT_exsd[DT_exsd$Sex == "m" & DT_exsd$Year >= 1950 & DT_exsd$Age < 100,]
 
-get_crossover_chunk <- function(ll, variable = "slope", agevar = "Age", spar = .3){
+# what about slope contours?
+get_crossover_chunk <- function(ll, sl = 0,variable = "slope", agevar = "Age", spar = .3){
 	ll <- data.frame(ll)
 	mod <- smooth.spline(x = ll[, variable], y = ll[, agevar], spar = spar)
-	predict(mod, x = 0)$y
+	predict(mod, x = sl)$y
 }
-crossovers <- data.table(llm1)[, list(crossover = get_crossover_chunk(.SD,spar = .3)), by = list(Year5)]
+crossovers <- data.table(llm1)[, list(crossover = get_crossover_chunk(.SD,sl=0,spar = .3)), by = list(Year5)]
 
-par(xaxs = 'i', yaxs = 'i')
-pdf(file="Presentation/Figures/Fig10.pdf",width=6,height=6)
+pdf(file="Presentation/Figures/Fig10.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
 plot(NULL, 
 		type = "n", 
 		xlim = c(1950, 2015),
 		ylim = c(0,100),
-		xlab = "Year", ylab = "Age",main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
 		asp = 1,
 		las = 1
 )
@@ -290,9 +310,76 @@ draw_field(llm,
 		N = 5,
 		pad = .5)
 # this is crossover in slope. Maybe compare with a different crossover?
-lines(crossovers$Year5 + 2.5, crossovers$crossover, col = "red", lwd = 2)
+lines(crossovers$Year5 + 2.5, crossovers$crossover+2.5, col = "red", lwd = 2)
 dev.off()
 
+
+
+pdf(file="Presentation/Figures/Fig11.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
+plot(NULL, 
+		type = "n", 
+		xlim = c(1950, 2015),
+		ylim = c(0,100),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		asp = 1,
+		las = 1
+)
+breaks <- seq(-1,1,by=.2)
+image(seq(1952.5,2012.5,by=5),seq(2.5,97.5,by=5),
+		t(acast(llm,Age~Year5,value.var = "slope")),xlim = c(1950,2015),ylim=c(0,100),
+		add = TRUE,breaks=breaks,col=rev(RColorBrewer::brewer.pal(10,"RdBu")))
+#contour(seq(1952.5,2012.5,by=5),seq(2.5,97.5,by=5),
+#		t(acast(llm,Age~Year5,value.var = "slope")),xlim = c(1950,2015),ylim=c(0,100),
+#		add = TRUE,breaks=breaks)
+
+draw_field(llm,
+		slopevar="slope",
+		yearvar = "Year5",
+		agevar = "Age",
+		lim=lim,
+		shrink=.5,
+		col = gray(.6),
+		N = 5,
+		pad = .5)
+# this is crossover in slope. Maybe compare with a different crossover?
+for (sl in seq(-.2,.8,by=.2)){
+	crossovers <- data.table(llm1)[, list(crossover = get_crossover_chunk(.SD,sl=sl,spar = .5)), by = list(Year5)]
+	lines(crossovers$Year5 + 2.5, 
+			crossovers$crossover+2.5, 
+			col = ifelse(zapsmall(sl)==0,"red","black"), lwd = ifelse(zapsmall(sl)==0,2,1))
+	text(2016,rev(crossovers$crossover)[1]+2.5,sl,xpd=TRUE)
+}
+
+dev.off()
+
+pdf(file="Presentation/Figures/Fig12.pdf",width=65/20+1,height=6)
+par(xaxs = 'i', yaxs = 'i',mai=c(.8,.8,.2,.2))
+plot(NULL, 
+		type = "n", 
+		xlim = c(1950, 2015),
+		ylim = c(0,100),
+		xlab = "Year", ylab = "Age",
+		#main = list("Slope in Life expectancy by SD at different ages",cex=1.5),
+		asp = 1,
+		las = 1
+)
+breaks <- seq(-1,1,by=.2)
+image(seq(1952.5,2012.5,by=5),seq(2.5,97.5,by=5),
+		t(acast(llm,Age~Year5,value.var = "slope")),xlim = c(1950,2015),ylim=c(0,100),
+		add = TRUE,breaks=breaks,col=rev(RColorBrewer::brewer.pal(10,"RdBu")))
+
+# this is crossover in slope. Maybe compare with a different crossover?
+for (sl in seq(-.2,.8,by=.2)){
+	crossovers <- data.table(llm1)[, list(crossover = get_crossover_chunk(.SD,sl=sl,spar = .5)), by = list(Year5)]
+	lines(crossovers$Year5 + 2.5, 
+			crossovers$crossover+2.5, 
+			col = ifelse(zapsmall(sl)==0,"red","black"), lwd = ifelse(zapsmall(sl)==0,2,1))
+	text(2016,rev(crossovers$crossover)[1]+2.5,sl,xpd=TRUE)
+}
+
+dev.off()
 # ------------------------------
 # code for first expiriments:
 # prelims:

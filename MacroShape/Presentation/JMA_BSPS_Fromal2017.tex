@@ -14,6 +14,10 @@
 \usepackage{graphics}
 \usepackage{fontawesome}
 
+% remove Figure: from captions
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+
 
 \definecolor{lightblue}{rgb}{0.145,0.6666,1} % Defines the color used for content box headers
 \definecolor{Red}{rgb}{0.9,0.15,0}
@@ -44,7 +48,7 @@
 \subtitle{\large{\textsc{Macro patterns in the evolution of human aging}}\\$\,$\\}
 
 
-\author[IBSPS. Riffe \& Aburto,  2017]
+\author[BSPS. Riffe \& Aburto,  2017]
 {
 	\vspace{-0.5cm}
 	\texorpdfstring{
@@ -83,7 +87,7 @@
 		
 		\item<2-> Demographers also use \textbf{modal} or  \textbf{median} age at death.
 		
-		\item<3-> They \textbf{conceal variation of lifespans} and other aspects of the age at death distribution.
+		\item<3-> Central tendencies \textbf{conceal variation of lifespans} and other aspects of the age at death distribution.
 			
 		
 		\end{itemize} }
@@ -175,11 +179,11 @@ $\vdots$
 \begin{center}
 
 		\LARGE{
-\textcolor{red}{ What if we take different  \textbf{ages} ? }
+\textcolor{red}{ What if we take different \textbf{ages} ? }
 \linebreak
 \pause
  
-\textcolor{blue}{ What if we take different   \textbf{years}? }
+\textcolor{blue}{ What if we take different \textbf{year} ranges? }
 \linebreak
 \pause
 
@@ -194,6 +198,7 @@ $\vdots$
 		
 			\begin{center}
 		\includegraphics[scale=.53]{Figures/Fig1}
+
 				\end{center}
 			
 \end{frame}
@@ -235,47 +240,18 @@ $\vdots$
 \end{frame}
 
 \begin{frame}
-		
-			\begin{center}		
-		\includegraphics[scale=.53]{Figures/Fig6}
-				\end{center}
-			
+	\begin{figure}
+		\centering		
+		\caption{Slope in Life expectancy by SD at different ages}
+		\includegraphics<1>[scale=.5]{Figures/Fig6}
+		\includegraphics<2>[scale=.5]{Figures/Fig7}
+		\includegraphics<3>[scale=.5]{Figures/Fig8}
+		\includegraphics<4>[scale=.5]{Figures/Fig9}
+		\includegraphics<5>[scale=.5]{Figures/Fig10}
+		\includegraphics<6>[scale=.5]{Figures/Fig11}
+		\includegraphics<7>[scale=.5]{Figures/Fig12}
+	\end{figure}
 \end{frame}
-
-\begin{frame}
-		
-			\begin{center}		
-		\includegraphics[scale=.53]{Figures/Fig7}
-				\end{center}
-			
-\end{frame}
-
-\begin{frame}
-		
-			\begin{center}		
-		\includegraphics[scale=.53]{Figures/Fig8}
-				\end{center}
-			
-\end{frame}
-
-\begin{frame}
-		
-			\begin{center}		
-		\includegraphics[scale=.53]{Figures/Fig9}
-				\end{center}
-			
-\end{frame}
-
-\begin{frame}
-		
-			\begin{center}		
-		\includegraphics[scale=.53]{Figures/Fig10}
-				\end{center}
-			
-\end{frame}
-
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
