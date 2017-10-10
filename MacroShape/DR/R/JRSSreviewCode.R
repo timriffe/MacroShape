@@ -6,7 +6,8 @@ library(reshape2)
 library(RColorBrewer)
 SWE <- readHFDweb("SWE","asfrRR",username=us,password=pw)
 fx  <- acast(SWE, Age~Year, value.var = "ASFR")
-
+ages <- as.integer(rownames(fx))
+years <- as.integer(colnames(fx))
 get_di <- function(mat,which = "accel"){
 	ages         <- as.integer(rownames(mat))
 	years        <- as.integer(colnames(mat))
@@ -122,9 +123,7 @@ this_fdata   <- fdata(t(fx), argvals = ages)
 deriv_1      <- fdata.deriv(this_fdata, nderiv = 1)$data
 deriv_2      <- fdata.deriv(this_fdata, nderiv = 2)$data
 
-image(deriv_2)
-image(deriv_1)
-range(deriv_1)
+
 hot_cold <- colorRampPalette(brewer.pal(11,"RdBu"),space="Lab")
 hcbreaks <- seq(-.03,.03,by=.0025)
 
@@ -190,6 +189,8 @@ text(decel[50, ], "maximum deceleration", pos = 3, cex = 1.2)
 #dev.off()
 
 
+SWE$Cohort <- SWE$Year - SWE$Age
+matc <- acast(SWE, Age~Cohort, value.var = "ASFR")
 # phase plot in cohort dim
 deriv_1c      <- apply(matc, 2, function(y, ages){
 			f1  <- splinefun(x=ages,y=y, method = "fmm")
@@ -203,7 +204,9 @@ deriv_2c      <- apply(matc, 2, function(y, ages){
 			out[is.na(y)]  <- NA
 			out
 		}, ages = ages)
-#plot(deriv_1c[, 80], deriv_2c[, 80 ],type='l')
+image(t(deriv_1c))
+image(t(deriv_2c))
+
 
 # TODO:
 
@@ -212,3 +215,151 @@ deriv_2c      <- apply(matc, 2, function(y, ages){
 # 2) make angle that of tangent
 # 3) make curled arrow instead over 3 ages? Gotta think on that one.
 # 4) period/cohort problem?
+
+
+
+
+
+
+
+# bezier curves not enough
+
+
+
+
+
+
+
+plot(deriv_1[60,],deriv_2[60,],asp=1,type='b')
+
+points(deriv_1[60,9],deriv_2[60,9],pch=16,col = "yellow")
+points(deriv_1[60,10],deriv_2[60,10],pch=16,col = "red")
+points(deriv_1[60,11],deriv_2[60,11],pch=16,col = "blue")
+
+x <- deriv_1[60,9:11]
+y <- deriv_2[60,9:11]
+bez <- function(x, y, evaluation=100) {
+	if(missing(y)) {
+		y <- x[[2]]
+		x <- x[[1]]
+	}
+	
+	n <- length(x)
+	X <- Y <- single(evaluation)
+	Z <- seq(0, 1, length=evaluation)
+	X[1] <- x[1];
+	X[evaluation] <- x[n]
+	Y[1] <- y[1];
+	Y[evaluation] <- y[n]
+	for(i in 2:(evaluation - 1)) {
+		z <- Z[i]
+		xz <- yz <- 0
+		const <- (1 - z) ^ (n - 1)
+		for(j in 0 : (n - 1)) {
+			xz <- xz + const * x[j + 1]
+			yz <- yz + const * y[j + 1]
+			const <- const* (n - 1 - j) / (j + 1) * z / (1 - z)
+			if(is.na(const)) prn(c(i, j, z))
+		}
+		
+		X[i] <- xz; Y[i] <- yz
+	}
+	
+	list(x=as.numeric(X), y=as.numeric(Y))
+}
+
+lines(as.numeric(X), as.numeric(Y))
+a <- splinefun(deriv_2[60,9:11]~deriv_1[60,9:11])
+d1 <- seq(deriv_1[60,11],deriv_1[60,9],length=100)
+lines(d1, a(d1), col = "blue")
+
+
+a <- splinefun(deriv_2[60,5:7]~deriv_1[60,5:7])
+d1 <- seq(deriv_1[60,5],deriv_1[60,7],length=100)
+lines(d1, a(d1), col = "blue")
+
+bez <- function(A,B,C,w=2,ti=seq(0,1,length=100)){
+	#ti <-seq(0,1,length=100)
+	(1-ti)^w*A + 
+			w*ti*(1-ti)*B + 
+			ti^w*C
+}
+
+bez_min <- function(bw,A,B,C,w=2){
+	(B - bez(A,B*bw,C,w=w,ti=.5))^2
+}
+
+bez3 <- function(x,y,n=100){
+	bwx <- optimize(bez_min,lower=-100,upper=100,A=x[1],B=x[2],C=x[3])$minimum
+	bwy <- optimize(bez_min,lower=-100,upper=100,A=y[1],B=y[2],C=y[3])$minimum 
+	
+	list(x = bez(A=x[1],B=bwx*x[2],C=x[3],2,ti=seq(0,1,length=n)),
+		 y = bez(A=y[1],B=bwy*y[2],C=y[3],2,ti=seq(0,1,length=n)))
+}
+
+png("/home/tim/git/MacroShape/MacroShape/DR/Proposal/Figures/phaseexample.png")
+plot(deriv_1[60,],deriv_2[60,],asp=1,type='c',xlab = "d1", ylab = "d2")
+text(deriv_1[60,],deriv_2[60,],12:55,cex=.7)
+dev.off()
+
+
+for (i in 2:43){
+	lines(bez3(deriv_1[60,(i-1):(i+1)],deriv_2[60,(i-1):(i+1)]), col = "red")
+}
+
+lines(bez3(deriv_1[60,5:7],deriv_2[60,5:7]), col = "red")
+lines(bez3(deriv_1[60,6:8],deriv_2[60,6:8]), col = "blue")
+lines(bez3(deriv_1[60,7:9],deriv_2[60,7:9]), col = "blue")
+
+curl1x1 <- function(x,y,a,p,cex=1,arr = TRUE,...){
+	xy  <- bez3(x,y,100)
+	xy$x <- (xy$x - x[2]) * cex + p + .5
+	xy$y <- (xy$y - y[2]) * cex + a + .5
+	lines(xy,...)
+	if (arr){
+		arrows(xy$x[99],xy$y[99],xy$x[100],xy$y[100], ...)
+	}
+}
+
+colnames(deriv_1) <- ages
+colnames(deriv_2) <- ages
+
+
+pdf("/home/tim/git/MacroShape/MacroShape/DR/Proposal/Figures/LexisPhase.pdf",width=14,height=7)
+image(1891:2014, 12:55, t(fx), asp = 1, breaks = my_breaks, col = my_ramp(length(my_breaks)-1),
+		xlab = "", ylab = "Age", 
+		main = "Swedish ASFR\nall parities combined, ages 12-55, years 1891-2014 (HFD)",
+		sub = "filled contours are a standard Lexis surface\n black contours over age in period perspective, while blue contour is cohort perspective mode")
+contour(1891:2014, 12:55, t(fx), breaks = seq(0,.24,by=.04), lwd = .5, col = gray(.5), add = TRUE)
+agesi <- 13:54
+yrsi  <- 1892:2013
+for (a in agesi[agesi%%2 == 0]){
+	for (p in yrsi[yrsi%%2 == 0]){
+		ai <- as.character((a-1):(a+1))
+		pt <- as.character(p)
+		curl1x1(x = deriv_1[pt,ai], 
+				y = deriv_2[pt,ai],
+				a = a, p = p, cex = 200, lwd = .5, 
+				length = .05)
+	}
+}
+lines(mode, lwd = 2)
+lines(accel)
+lines(decel)
+
+
+lines(years, MAC, col = "magenta")
+text(1900,MAC[years == 1900], "MAC", col = "magenta",cex = 1.2,pos = 3)
+
+text(mode[50, ], "mode", pos = 3, cex = 1.2)
+text(accel[50, ], "maximum acceleration", pos = 1, cex = 1.2)
+text(decel[50, ], "maximum deceleration", pos = 3, cex = 1.2)
+
+# what would a cohort model look like imposed on the AP surf?
+lines(modec$Year+.5, modec$Age, col = "blue", lwd =2)
+text(1920,38,"cohort mode", cex = 1.2, col = "blue")
+
+dev.off()
+
+
+
