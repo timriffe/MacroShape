@@ -39,28 +39,52 @@
 
 \maketitle
 
+\begin{abstract}
+~
+\begin{description}
+\item[\textbf{Background}] Lexis surfaces are an established visualization
+technique to show how a given value changes over age and time. Vector fields are
+a two-dimensional representation of two variables: direction and speed (or
+force). Phase planes represent limits and thresholds of differential equations,
+such as the relationship between first and second derivatives.
+\item[\textbf{Objective}] We aim to increase the dimensionality of patterns
+shown on the Lexis surface by placing a vector field on the Lexis surface. We
+also relate the phase planes to the Lexis surface by way of the Lexis field. 
+\item[\textbf{Results}] We show Lexis fields using different combinations of
+visual encodings, such as color, contour layering, and angle, length, and
+curvature of field elements. These instruments enable information layering that
+is not otherwise possible on standard Lexis surfaces.
+\item[\textbf{Conclusions}] Lexis fields extend the analytic power of the Lexis
+surface, and these can be rendered to display information at higher densities
+than commonly made Lexis surfaces.
+\end{description}
+\end{abstract}
+
+
 \section*{Abstract}
 Lexis surfaces are a graphical form used to display data on the Lexis coordinate
 plane, a Cartesian plane that is also a simplex relationship between age,
 period, and cohort. Surfaces are often displayed as heat maps, contours maps,
 perspective plots, or variants of these things. Various kinds of
-quantities, such as raw magnitudes, ratios, intensities, proportions,
-derivatives, and even compositions \citep{scholey2017visualizing}) can be displayed on Lexis 
+quantities, such as raw magnitudes, differences, ratios, intensities,
+proportions, derivatives, and even compositions \citep{scholey2017visualizing}) can be displayed on Lexis 
 surfaces in order to put age, period, cohort, or other patterns in relief. 
 Vector fields are a graphical form used to display variation in speed,
 direction, or force over a plane. Point estimates of variation on the plane are
 often represented with arrows where length is proportional to a function of
 magnitude (force, speed) and where angle indicates direction. We propose a
 fusion of these two graphical instruments, \emph{Lexis fields}, as a method to
-display variation in relationships between variables over age and time. As an
-example we show patterns in the relationship between average remaining lifespan
-and the standard deviation of remaining lifespan over age and time based on all
-available populations in the \citet{HMD} from 1950 onward.
+display variation in relationships between variables over age and time. We
+give two different use examples of Lexis fields. The first example
+shows patterns in the relationship between average remaining lifespan and the
+standard deviation of remaining lifespan over age and time based on all
+available populations in the \citet{HMD} from 1950 onward. The second example
+shows changes in the relationship between the first and second derivative of
+period fertility rates over age and time, essentially a Lexis \emph{phase
+plane}, but represented as a Lexis field.
 
-We offer several variants of Lexis field design, each of which still merits
-further iteration. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis
-field that serves to illustrate the underlying concept. This display differs
-from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
+We offer several experimental variants of Lexis field design for our two
+examples. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display differs from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
 interpreted as a subplot, where the convention is to always read a
 relationship from left to right. 2) The left and right extremes are fixed for
 each segment according to the year-width rendered, in this case 5-year
