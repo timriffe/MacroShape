@@ -20,6 +20,7 @@ DT$Year5 <- DT$Year - DT$Year %% 5
 # this does the same as get_field
 DT_exsd  <- DT[,list(slope = get_slope(.SD,xvar = "ex", yvar = "SD")), by = list(Age, Year5, Sex)]
 DT_exsd  <- as.data.frame(DT_exsd)
+
 # slopes within single ages, over 5 calendar years, all avail countries and years
 # in this particular version of HMD...
 
@@ -176,7 +177,7 @@ text(1980,-10,"Year",xpd=TRUE,font=2)
 text(1940,50,"Age",xpd=TRUE,font=2,srt=90)
 dev.off()
 
-
+#?arrows
 
 
 
