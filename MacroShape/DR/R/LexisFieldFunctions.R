@@ -66,6 +66,48 @@ draw_slope <- function(slope, year, age, N = 5, pad = 0, lim = .065, ...){
 	segments(year + pad, yl, year + N - pad, yr, ...)
 }
 
+# added 22-May, more flexible, no curvature, though
+draw_field_element <- function(
+		age = 0,       # lower bound of cell age
+		year = 2000,   # lower bound of cell year
+		interval = 5,  # cell dimension
+		slope = 1,  # slope of regression or whatever
+		length = 1, # default meaning = interval - (2*pad)
+		pad = .1,   # edge pad if length = 1 and slope = 0 or Inf
+		lambda = 1, # to expand or contract all slopes by same amount
+		...){
+	
+	# radius default 
+	rad.def <- interval / 2
+	
+	# cell centroid
+	xc      <- year + rad.def 
+	yc      <- age + rad.def
+	
+	# now shrink in in case there's edge padding.
+	rad.def <- rad.def - pad
+	
+	# effective slope:
+	eslope  <- slope * lambda
+	rad1    <- atan(eslope)
+	x1      <- cos(rad1) * rad.def
+	x2      <- -x1
+	y1      <- sin(rad1) * rad.def
+	y2      <- -y1
+	
+	# now move to centroid
+	x1      <- xc + x1
+	x2      <- xc + x2
+	y1      <- yc + y1
+	y2      <- yc + y2
+	
+	# and draw it
+	segments(x1, y1, x2, y2, ...)
+	
+}
+
+
+
 draw_field <- function(ll, slopevar = "slope",yearvar = "year",agevar ="age",lim=.065,shrink=.6,...){
 	for (i in 1:nrow(ll)){
 		draw_slope(

@@ -62,18 +62,25 @@ than commonly made Lexis surfaces.
 Lexis surfaces are a graphical tool used to display data on the Lexis coordinate plane, a Cartesian plane that is also a simplex relationship between age, period, and cohort. Surfaces are often displayed as heat maps, contour maps, perspective plots, or variants of these things. Various kinds of quantities, such as raw magnitudes, differences, ratios, intensities, proportions, derivatives, and even compositions \citep{scholey2017visualizing}) can be displayed on Lexis surfaces in order to put age, period, cohort, or other patterns in relief. 
 
 Maps in general combine layers of categorical, continuous, and
-symbolic information on a common spatial projection. Lexis surfaces in contrast almost exclusively display one visual layer at a time. Even the composite surfaces of \citet{scholey2017visualizing}, which display layered information are rendered as a single visual layer. Small multiples of Lexis surfaces on the other hand constitute a de-layering, as these are spatially disjoint. We propose to enrich Lexis surfaces by adding a visual layer of quantitative information coded symbolically as a vector field.
+symbolic information on a common spatial projection. Lexis surfaces in contrast almost exclusively display one visual layer at a time. Even the composite surfaces of \citet{scholey2017visualizing}, which display layered information are rendered as a single visual layer. Small multiples of Lexis surfaces on the other hand constitute a de-layering, as these are spatially disjoint. We propose to enrich Lexis surfaces by adding a visual layer of quantitative information coded symbolically as a vector field, and we liken to cartographic information layering.
 
 Vector fields are a graphical form generally used to display variation in speed,
 direction, or force over a plane. Point estimates of these quantitie on the plane are
-often represented with arrows, where length may be proportional to a function of
+often represented with segments or arrows, where length may be proportional to a function of
 magnitude (force, speed), and angle indicates direction, potentially disambiguated with an arrowhead. We propose a fusion of Lexis surfaces and vector fields, \emph{Lexis fields}, as a tool to
-display variation in relationships between variables over age and time. A Lexis field may either be rendered atop on a Lexis surface, representing two map layers --- a true Lexis map --- or as a stand alone visualization. 
+display variation in relationships between variables over age and time. A Lexis field may either be rendered atop on a Lexis surface, representing two map layers --- a true Lexis map --- or as a single-layer alone visualization. 
 
 Our example shows patterns in the relationship between remaining life expectancy and
 the standard deviation of remaining lifespan over age and time based on all
 available populations in the \citet{HMD} from 1950 onward. 
 
+\section{Lexis field construction}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[scale=.8]{Figures/ExplainerDiagram.pdf}
+  \caption{A diagram depicting the translation of functional relationships in data conditioned on age and time to visual encoding on a Lexis field. \textbf{A}: Condition data selection on age and time. \textbf{B}: model the functional relationship in data subset. \textbf{C}: Translate the model to field elements, `pointers', using angle, and possibly also length, curvature, thickness, etc to encode model qualities. \textbf{D}: Populate the Lexis plane with field pointers to create a Lexis field.}
+  \label{fig:sfig1}
+\end{figure}
 
 We offer several experimental variants of Lexis field design for our two
 examples. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display differs from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
@@ -136,8 +143,9 @@ lifespan, males (HMD)}
 \label{fig:fig}
 \end{figure}
 
-\section{Field elements}
-Insert explainer diagram and walkthrough
+
+
+
 
 \nocite{vaupel1987thousands}
 

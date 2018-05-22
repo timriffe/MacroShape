@@ -1,6 +1,7 @@
 # Author: tim
 ###############################################################################
 setwd("/home/tim/git/MacroShape/MacroShape")
+source("R/LexisFieldFunctions.R")
 # 1)
 # generic relationship conditioned on a particular age and time.
 # y = m*x+b
@@ -63,46 +64,6 @@ segments(xnew2[1],ynew2[1],xnew2[2],ynew2[1])
 #		slopeto = ba[2],
 #		nvert=100)
 #segments(xnew2[1],ynew2[1],xnew2[2],ynew2[1])
-
-draw_field_element <- function(
-		age = 0,       # lower bound of cell age
-		year = 2000,   # lower bound of cell year
-		interval = 5,  # cell dimension
-		slope = 1,  # slope of regression or whatever
-		length = 1, # default meaning = interval - (2*pad)
-		pad = .1,   # edge pad if length = 1 and slope = 0 or Inf
-		lambda = 1, # to expand or contract all slopes by same amount
-		...){
-	
-	# radius default 
-	rad.def <- interval / 2
-	
-	# cell centroid
-	xc      <- year + rad.def 
-	yc      <- age + rad.def
-	
-	# now shrink in in case there's edge padding.
-	rad.def <- rad.def - pad
-	
-	# effective slope:
-	eslope  <- slope * lambda
-	rad1    <- atan(eslope)
-	x1      <- cos(rad1) * rad.def
-	x2      <- -x1
-	y1      <- sin(rad1) * rad.def
-	y2      <- -y1
-	
-	# now move to centroid
-	x1      <- xc + x1
-	x2      <- xc + x2
-	y1      <- yc + y1
-	y2      <- yc + y2
-	
-	# and draw it
-	segments(x1, y1, x2, y2, ...)
-	
-}
-
 
 # possibly add angle element to this
 pdf("DR/Manuscript/Figures/GenericFieldElement.pdf",width=3,height=3)
