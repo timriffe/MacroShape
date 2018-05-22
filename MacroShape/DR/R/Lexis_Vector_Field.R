@@ -18,10 +18,10 @@ library(reshape2)
 # a slicker way to calculate these slopes
 
 
-Dat       <- Dat[Dat$Age %%5 == 0, ]
+Dat       <- Dat[Dat$Age %% 5 == 0, ]
 
-years <- seq(1950,2010,by = 5)
-ages  <- seq(0,100,by=5)
+years     <- seq(1950, 2010,by = 5)
+ages      <- seq(0, 100, by = 5)
 
 ll <- get_vector_field(years, 
 		         ages, 
