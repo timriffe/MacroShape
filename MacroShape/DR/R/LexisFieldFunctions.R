@@ -25,6 +25,8 @@ get_coefs <- function(chunk, xvar = "ex", yvar = "CV"){
 	mod$coef
 }
 
+
+
 get_slope <- function(chunk, xvar = "ex", yvar = "CV"){
 	get_coefs(chunk=chunk,xvar=xvar,yvar=yvar)[2]
 }

@@ -70,16 +70,19 @@ often represented with segments or arrows, where length may be proportional to a
 magnitude (force, speed), and angle indicates direction, potentially disambiguated with an arrowhead. We propose a fusion of Lexis surfaces and vector fields, \emph{Lexis fields}, as a tool to
 display variation in relationships between variables over age and time. A Lexis field may either be rendered atop on a Lexis surface, representing two map layers --- a true Lexis map --- or as a single-layer alone visualization. 
 
-Our example shows patterns in the relationship between remaining life expectancy and
+We give an overview of constructing a Lexis field, and a single appplication. Our example explores the relationship between remaining life expectancy and
 the standard deviation of remaining lifespan over age and time based on all
-available populations in the \citet{HMD} from 1950 onward. 
+available populations in the \citet{HMD} from 1950 onward. Other potential applications are discussed.
 
 \section{Lexis field construction}
+
+Constructing a Lexis field involves several desgrees of designer freedom, which can however be codified into four basic steps, which we summarize in Figure~\ref{fig:explain}.
+
 \begin{figure}[ht!]
   \centering
   \includegraphics[scale=.8]{Figures/ExplainerDiagram.pdf}
   \caption{A diagram depicting the translation of functional relationships in data conditioned on age and time to visual encoding on a Lexis field. \textbf{A}: Condition data selection on age and time. \textbf{B}: model the functional relationship in data subset. \textbf{C}: Translate the model to field elements, `pointers', using angle, and possibly also length, curvature, thickness, etc to encode model qualities. \textbf{D}: Populate the Lexis plane with field pointers to create a Lexis field.}
-  \label{fig:sfig1}
+  \label{fig:explain}
 \end{figure}
 
 We offer several experimental variants of Lexis field design for our two

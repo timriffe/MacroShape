@@ -82,19 +82,19 @@ dev.off()
 
 # ------------------------
 
-years <- seq(1950,2015,by=5)
-ages <- seq(0,100,by=5)
+years               <- seq(1950, 2015, by = 5)
+ages                <- seq(0, 100, by = 5)
 
 # crosses
-crossrad <- .6
-xl <- years - crossrad
-xr <- years + crossrad
-yl <- ages - crossrad
-yu <- ages + crossrad
+crossrad            <- .6
+xl                  <- years - crossrad
+xr                  <- years + crossrad
+yl                  <- ages - crossrad
+yu                  <- ages + crossrad
 xl[xl < min(years)] <- min(years)
 xr[xr > max(years)] <- max(years)
-yl[yl < min(ages)] <- min(ages)
-yu[yu > max(ages)] <- max(ages)
+yl[yl < min(ages)]  <- min(ages)
+yu[yu > max(ages)]  <- max(ages)
 
 pdf("DR/Manuscript/Figures/LexisCellSelection.pdf",width=3*.8,height=3+.2)
 par(mai=c(.2,.2,.1,.1))
