@@ -57,7 +57,7 @@ than commonly made Lexis surfaces.
 \end{description}
 \end{abstract}
 
-
+\onehalfspacing
 \section*{Introduction}
 Lexis surfaces are a graphical tool used to display data on the Lexis coordinate plane, a Cartesian plane that is also a simplex relationship between age, period, and cohort. Surfaces are often displayed as heat maps, contour maps, perspective plots, or variants of these things. Various kinds of quantities, such as raw magnitudes, differences, ratios, intensities, proportions, derivatives, and even compositions \citep{scholey2017visualizing}) can be displayed on Lexis surfaces in order to put age, period, cohort, or other patterns in relief. 
 
@@ -93,67 +93,53 @@ Constructing a Lexis field involves several desgrees of designer freedom, which 
 \end{figure}
 
 \section{Application}
-We offer a selection of variants of Lexis field design for our example of the relationship between the mean and standard deviation of remaining lifespan. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display differs from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
-interpreted as a subplot, where the convention is to always read a
-relationship from left to right. 2) The left and right extremes are fixed for
-each segment according to the year-width rendered, in this case 5-year
-groupings. This means that relationships farther from zero also result in longer
-line segments, but the length of the line segment is not strictly proportional
-to the magnitude of the slope coefficient or any other quantity. For each
-subplot, the x range represents the same hypothetical range of
-variation in remaining life expectancy or 2 years. The y-axis is arbitrarily,
-but identically scaled for each subplot. Other criteria for slope length would
-also be possible and will be considered.
+We select all HMD data available for females after 1950. For each lifetable we calculate two additional columns: the standard deviation of remaining lifespan $sd(x)$, and the coefficient of variation of remaining lifespan $CV(x)$. Each Lexis field element is based on the relationship between $sd(x)$ and remaining life expectancy $e(x)$ in 1$\times1$5 Lexis cells\footnote{Data points included in regressions are single ages evenly divisible by five for each of the five years included in a Lexis reference cell.}, as summarized by bivariate linear regression over the data points in each cell. The regression results used for each Lexis cell in resulting Lexis fields are identical, but the translation of regressions to field pointers varies between designs. We offer four examples of Lexis field designs, displayed in Figure~\ref{fig:figFields}, each with rendered with 5$\times$5 Lexis subplots.
 
-Figure~\ref{fig:sfig2} is identical to the previous, but adds a red contour line
-at the turning point in slopes. In this case there is only one sign change is slope
-coefficients over the age pattern. It is easier to locate and detect change in
-this (novel) threshold with the line markup than from the bare Lexis field.
-Indeed one could add further isoclines at slope break points, as in
-Figure~\ref{fig:sfig3} or \ref{fig:sfig4}, and insodoing we begin a transition
-into the more standard graphical form of contour maps. Figure~\ref{fig:sfig3}
-blends the Lexis field with a heatmap, where hue indicates both direction and
-magnitude of slope coefficients. In this case, slope coefficients are
-double-coded, and this display is likely the most legible, but it comes at a
-cost of clutter. Figure~\ref{fig:sfig4} removes the slope segments, but is
-otherwise identical. We wish to explore variants of the first three of these
-Lexis field proposals, and may possibly display more example relationships
-between other variables in a full manuscript, data permitting.
+The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display renders each regression slope as a line segment of equal length (4 ``years'' long) and centered on each Lexis cell. The slope of each pointer is rendered identical to regression slopes, which may be justified in this case, since Lexis cells fix a 1:1 year aspect ratio, while $e(x)$ and $sd(x)$ are also in year units. This is the truest and most literal depiction of how these regression slopes vary over age and time among HMD females, and nothing more. From this figure we can see, for example, that there is some age where the relationship turns from negative to positive, which increased slightly over time. Slopes dampened in younger ages around the 1980s, but have since increased again.
+
+The second of these, Figure~\ref{fig:sfig2}, also renders slopes on a unity aspect ratio, but lengths are proportional to the regression $r^2$. Ergo, longer segments represent more linear fits and shorter segments, almost approaching points, indicate areas where the relationship is not well described by a line. Other measures of model fit could be used to similar effect to scale some characteristic of the field pointers. For example, Figure~\ref{fig:sfig3} renders slopes exaggerated by a factor of 2, with pointer lengths scaled proportional to the interquartile range of $e(x)$ used in regression, and line weight and grayscale ``proportional'' to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher $r^2$ results in more contrast in the field. 
+
+The final example, Figure~\ref{fig:sfig4} is a true Lexis map. The base of the map is a filled contour plot of the average coefficient of variation $CV(x)$ in single ages. This map is redundantly coded with a sequantial color palette and labelled contours, which liberates the surface from an explicit color legend. The same field from Figure~\ref{fig:sfig4} is layered atop the CV surface, acheiving a true layered map. In principle, one could represent variation in the slope of some other regression over age and time as a contour plot, with the present field atop, thereby layering comparable information. However, the present example serves to illustrate layering with the field.
 
 \begin{figure}
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.48\textwidth}
+\captionsetup{width=.8\linewidth}
   \centering
-  \includegraphics[scale=.4]{Figures/FigApp1.pdf}
-  \caption{A simple field.}
+  \includegraphics[scale=.38]{Figures/FigApp1.pdf}
+  \caption{Lexis field: $sd(x)$ by $e(x)$ linear fits, with slopes drawn directly. Pointer lengths are all equal.}
   \label{fig:sfig1}
 \end{subfigure}%
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.48\textwidth}
+\captionsetup{width=.8\linewidth}
   \centering
-  \includegraphics[scale=.4]{Figures/FigApp2.pdf}
-  \caption{A simple field, with the zero-slope isocline drawn (red).}
+  \includegraphics[scale=.38]{Figures/FigApp2.pdf}
+  \caption{Lexis field: $sd(x)$ by $e(x)$ linear fits, with slopes drawn directly. Pointer length is proportional to the $r^2$ of the fit.}
   \label{fig:sfig2}
 \end{subfigure}
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.48\textwidth}
+\captionsetup{width=.8\linewidth}
   \centering
-  \includegraphics[scale=.4]{Figures/FigApp3.pdf}
-  \caption{Slopes doubly coded with field segments and discrete color, further
-  slope isoclines drawn.}
+  \includegraphics[scale=.38]{Figures/FigApp3.pdf}
+  \caption{Lexis field: $sd(x)$ by $e(x)$ linear fits, with slopes exaggerated by 2. Pointer length is proportional to the IQR of $e(x)$, while grayscale and segment width are proportional to $r^2$ of the fit.}
   \label{fig:sfig3}
 \end{subfigure}%
-%\begin{subfigure}{.5\textwidth}
-%  \centering
-%  \includegraphics[scale=.6]{Figures/Fig12-crop.pdf}
-%  \caption{Discrete color heatmap with selected isoclines drawn.}
-%  \label{fig:sfig4}
-%\end{subfigure}
+\begin{subfigure}{.48\textwidth}
+\captionsetup{width=.8\linewidth}
+  \centering
+  \includegraphics[scale=.38]{Figures/FigApp4.pdf}
+  \caption{A Lexis map: Lexis surface of mean CV as a filled contour plot plus a Lexis field of $sd(x)$ by $e(x)$ linear fits, slopes exaggerated by 2. Pointer length is proportional to the IQR of $e(x)$, while grayscale and segment width are proportional to $r^2$ of the fit.}
+  \label{fig:sfig4}
+\end{subfigure}
 \caption{Four versions of Lexis fields displaying the linear
 relationship between the standard deviation and mean of remaining
-lifespan, males (HMD)}
-\label{fig:fig}
+lifespan, females (HMD).}
+\label{fig:figFields}
 \end{figure}
 
 \section{Discussion}
-Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still inteligible. 
+We suggest the use of vector fields on the Lexis surface, introducing the notion of a Lexis field, which is simple a vector field on a regular Lexis grid over age and time. We demonstrate some of the designer degrees of freedom in translating data into the elements of a Lexis field, as well as an instance of Lexis map layering. These examples serve to illustate the construction of Lexis fields, but do not pretend to be ``best practice'' Lexis surface in terms of visual design or legibility. It is our sense that the patterns revealed in Figures~\ref{fig:sfig1}-\ref{fig:sfig3} are accessible to the viewer and lend themselves to substantive interpretation. This visual instrument indeed arose in practice in an attempt to investigate the apparently mechanical relationship between lifespan variation and average length of life with a macro view. Figure~\ref{fig:sfig3} simply serves to illustate that Lexis fields can be layered with traditional Lexis surfaces that are color coded, increasing the information and pattern density on the Lexis plane with little drawback in terms of legibility. 
+
+Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still revealing. On the other hand a field may be derived from a single underlying pattern rather than a series of regressions. For example, \citet{shang2018visualizing} recommends the use of phase diagrams to represent the rate of change implied by the hypothetical lifecourse implied by period fertility curves TBC
 
 
 \nocite{vaupel1987thousands}
