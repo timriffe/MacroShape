@@ -76,7 +76,14 @@ available populations in the \citet{HMD} from 1950 onward. Other potential appli
 
 \section{Lexis field construction}
 
-Constructing a Lexis field involves several desgrees of designer freedom, which can however be codified into four basic steps, which we summarize in Figure~\ref{fig:explain}. It only makes sense to plot a Lexis field if data contain a relationship that can be summarized with a line, curve, or similar, and that varies by age and/or time. A structuralThe first step is to determine the Lexis reference grid size for data selection, for example ___. Second, abstract a
+Constructing a Lexis field involves several desgrees of designer freedom, which can however be codified into four basic steps, which we summarize in Figure~\ref{fig:explain}. It only makes sense to plot a Lexis field if data contain a relationship that can be summarized with a line, a simple curve, or similar, and that varies by age and/or time. The steps to do so are outlined in the following steps, referenced to regions of Figure~\ref{fig:explain}.
+\begin{description}
+\item[\textbf{A}] Determine the Lexis reference grid size for data selection. For example, a five-year grid implies 5$\times$5 Lexis cells. Data may be selected from multiple populations on the same reference grid. Presumbably two variables are required.
+\item[\textbf{B}] Abstract a model from the data, such as a linear, parabolic, or similarly simple fit. We consider the case of a bivariate linear model that produces a result of the form $y = a + b*x$. 
+\item[\textbf{C}] Translate the model fit to the characteristics of a line segment, or field \emph{pointer}. Treat each grid cell on the Lexis diagram as a plot area, by default with equal year units in $x$ and $y$, for example as implied by a 5$\times$5 cell. In our implementation, the pointer always passes through the centroid of the Lexis cell. The pointer angle or slope may be taken as-is from a linear model, or exaggerated by the same multiplier for the entire field to increase definition. Within the Lexis cell a circle tangent to the four cell borders standardizes the length of the pointer, where the radius of the standard circle can be adjusted by defining an inner margin width (pad) to the Lexis cell. In the simplest case, all pointers may be of the same length, irrespective of slope, as determined by this reference circle. Otherwise, length may be proportional to some other data or model characteristic, such as the observed range of $x$, the goodness of model fit, or similar. Likewise, other segments characteristics, such as color, or width, may also map to data characteristics.
+\item[\textbf{D}] Render the segment in the corresponding Lexis grid cell, repeating all steps for each cell in the diagram. Variations over the Lexis plane in pointer aesthetics 
+\end{description}
+
 
 \begin{figure}[ht!]
   \centering
@@ -85,8 +92,8 @@ Constructing a Lexis field involves several desgrees of designer freedom, which 
   \label{fig:explain}
 \end{figure}
 
-We offer several experimental variants of Lexis field design for our two
-examples. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display differs from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
+\section{Application}
+We offer a selection of variants of Lexis field design for our example of the relationship between the mean and standard deviation of remaining lifespan. The first of these, Figure~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display differs from a standard vector field in two notable ways. 1) Segments are drawn rather than arrows, because each slope can be
 interpreted as a subplot, where the convention is to always read a
 relationship from left to right. 2) The left and right extremes are fixed for
 each segment according to the year-width rendered, in this case 5-year
@@ -116,38 +123,37 @@ between other variables in a full manuscript, data permitting.
 \begin{figure}
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[scale=.6]{Figures/Fig9-crop.pdf}
+  \includegraphics[scale=.4]{Figures/FigApp1.pdf}
   \caption{A simple field.}
   \label{fig:sfig1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[scale=.6]{Figures/Fig10-crop.pdf}
+  \includegraphics[scale=.4]{Figures/FigApp2.pdf}
   \caption{A simple field, with the zero-slope isocline drawn (red).}
   \label{fig:sfig2}
 \end{subfigure}
-
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[scale=.6]{Figures/Fig11-crop.pdf}
+  \includegraphics[scale=.4]{Figures/FigApp3.pdf}
   \caption{Slopes doubly coded with field segments and discrete color, further
   slope isoclines drawn.}
   \label{fig:sfig3}
 \end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=.6]{Figures/Fig12-crop.pdf}
-  \caption{Discrete color heatmap with selected isoclines drawn.}
-  \label{fig:sfig4}
-\end{subfigure}
+%\begin{subfigure}{.5\textwidth}
+%  \centering
+%  \includegraphics[scale=.6]{Figures/Fig12-crop.pdf}
+%  \caption{Discrete color heatmap with selected isoclines drawn.}
+%  \label{fig:sfig4}
+%\end{subfigure}
 \caption{Four versions of Lexis fields displaying the linear
 relationship between the standard deviation and mean of remaining
 lifespan, males (HMD)}
 \label{fig:fig}
 \end{figure}
 
-
-
+\section{Discussion}
+Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still inteligible. 
 
 
 \nocite{vaupel1987thousands}
