@@ -22,6 +22,13 @@
 \newcommand{\tp}{\quad\quad\text{.}}
 \defcitealias{HMD}{HMD}
 
+\newlength{\blackoutwidth}
+\newcommand{\blackout}[1]
+{%necessary comment
+  \settowidth{\blackoutwidth}{#1}%necessary comment
+  \rule[-0.3em]{\blackoutwidth}{1.125em}%necessary comment
+}
+
 \newcommand\ackn[1]{%
   \begingroup
   \renewcommand\thefootnote{}\footnote{#1}%
@@ -97,7 +104,7 @@ We select all HMD data available for females after 1950. For each lifetable we c
 
 The first of these, Fig.~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display renders each regression slope as a line segment of equal length (4 ``years'' long) and centered on each Lexis cell. The slope of each pointer is rendered identical to regression slopes, which may be justified in this case, since Lexis cells fix a 1:1 year aspect ratio, while $e(x)$ and $sd(x)$ are also in year units. This is the truest and most literal depiction of how these regression slopes vary over age and time among HMD females, and nothing more. From this figure we can see, for example, that there is some age where the relationship turns from negative to positive, which increased slightly over time. Slopes dampened in younger ages around the 1980s, but have since increased (except infants).
 
-The second version, Fig.~\ref{fig:sfig2}, also renders slopes on a unity aspect ratio, but lengths are proportional to the Pearson correlation coefficient. Other measures of model fit could be used to similar effect to scale some characteristic of the field pointers. For example, Fig.~\ref{fig:sfig3} renders slopes multiplied by two, with pointer lengths scaled proportional to the between-population interquartile range of remaining life expectancy values $e(x)$ used in regression, and line weight and grayscale ``proportional'' to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher $r^2$ results in more contrast in the field. 
+The second version, Fig.~\ref{fig:sfig2}, also renders slopes on a unity aspect ratio, but lengths are proportional to the Pearson' correlation coefficient's $r$. Other measures of model fit could be used to similar effect to scale some characteristic of the field pointers. For example, Fig.~\ref{fig:sfig3} renders slopes multiplied by two, with pointer lengths scaled proportional to the between-population interquartile range of the $e(x)$ and $sd(x)$ values used in regressions\footnote{Specifically, pointer length is proportional to the central spread of the relationship between $e(x)$ and $sd(x)$, approximated as $\sqrt{IQR(e(x))^2 + IQR(sd(x))^2}$}., and line weight and grayscale ``proportional'' to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher Pearson's $r$ results in more contrast in the field. 
 
 The final example, Fig.~\ref{fig:sfig4} is a true Lexis map. The base of the map is a filled contour plot of the mean (over HMD populations) coefficient of variation of the conditional remaining distribution $CV(x)$ in each single age and year. This map is redundantly coded with a sequential color palette and labelled contours, which liberates the surface from an explicit color legend. The same field from Fig.~\ref{fig:sfig3} is layered atop the CV surface, achieving a true layered map. In principle, one could represent variation in the slope of some other regression over age and time as a contour plot, with the present field atop, thereby layering comparable information. However, the present example serves to illustrate layering with the field.
 
@@ -139,10 +146,18 @@ lifespan, females (HMD).}
 \section{Discussion}
 We suggest the use of vector fields on the Lexis surface, introducing the notion of a Lexis field, which is simple a vector field on a regular Lexis grid over age and time. We demonstrate some of the designer degrees of freedom in translating data into the elements of a Lexis field, as well as an instance of Lexis map layering. These examples serve to illustrate the construction of Lexis fields, but do not pretend to be ``best practice'' Lexis surface in terms of visual design or legibility. It is our sense that the patterns revealed in Figures~\ref{fig:sfig1}-\ref{fig:sfig3} are accessible to the viewer and lend themselves to substantive interpretation. This visual instrument indeed arose in practice in an attempt to investigate the apparently mechanical relationship between lifespan variation and average length of life with a macro view. Fig.~\ref{fig:sfig4} simply serves to illustrate that Lexis fields can be layered with traditional Lexis surfaces that are color coded, increasing the information and pattern density on the Lexis plane with little drawback in terms of legibility. 
 
-Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still revealing. On the other hand a field may be derived from a single underlying pattern rather than a series of regressions on different populations or variables. For example, \citet{shang2018visualizing} recommends the use of derivative phase diagrams to represent the rate of change of the hypothetical lifecourse implied by period fertility curves. This construct could be translated to a Lexis field in a straightforward way, with pointers mapping to the notions of acceleration and velocity. Certainly variants of vector fields could be used to intuitively render other demographic phenomena and components of demographic change, and these do not need to adhere to the Lexis grid.
+Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still revealing. On the other hand a field may be derived from a single underlying pattern rather than a series of regressions on different populations or variables. For example, \citet{shang2018visualizing} recommends the use of derivative phase diagrams to represent the rate of change of the hypothetical lifecourse implied by period fertility curves. This construct could be translated to a Lexis field in a straightforward way, with pointers mapping to the notions of acceleration and velocity. Certainly variants of vector fields could be used to intuitively render other demographic phenomena and components of demographic change, and these do not need to adhere to the Lexis grid. Indeed, we suggest the use of fields based on demographic relationships in spatial settings.
 
 \section{Conclusions}
-We describe the construction and use of vector fields on the Lexis plane. We argue that this technique can increase the information density and scope displayed on the Lexis surface. We also argue that the visual encoding of fields is easily rendered compatible with Lexis surfaces rendered as filled contour plots, which lends itself to map layering. We suggest alternative visual encodings, as well as an approach to re-codify phase planes as fields in the Lexis space. In sum, displaying a larger variety of demographic quantities on the Lexis plane and increasing the information density on the Lexis plane using techniques such as fields should broaden the scope of demographic exploration and sharpen the instruments of demographic pattern detection.
+We describe the construction and use of vector fields on the Lexis plane. We argue that this technique can increase the information density and scope displayed on the Lexis surface. We also argue that the visual encoding of fields is easily rendered compatible with Lexis surfaces rendered as filled contour plots, which lends itself to map layering. We suggest alternative visual encodings and uses. In sum, displaying a larger variety of demographic quantities on the Lexis plane and increasing the information density on the Lexis plane using layering techniques such as fields should broaden the scope of demographic exploration and sharpen the instruments of demographic pattern detection.
+
+\section{Reproducibility}
+Code used to produce the experimental visualizations here is available in a github repository: 
+
+\blackout{\url{https://github.com/timriffe/MacroShape}}
+
+\section{Acknowledgements}
+We wish to thank \blackout{Alyson van Raalte} for helpful comments received that improved this manuscript.
 
 \nocite{vaupel1987thousands}
 \nocite{weiskopf2007vector}
