@@ -16,6 +16,10 @@ Dat          <- Dat[Dat$Year >= 1950, ]
 Dat$Year5    <- Dat$Year - Dat$Year %% 5
 Dat$Age5     <- Dat$Age - Dat$Age %% 5
 
+#Dats <- subset(Dat, Year5 == 2000 & Age == 50 & Sex == "f")
+#plot(Dats$ex,Dats$SD)
+
+
 Dat          <- data.table(Dat)
 DatMod       <- Dat[,get_brr_dt(.SD,xvar="ex",yvar="SD"),by=list(Sex, Year5, Age)]
 head(DatMod)
