@@ -16,13 +16,12 @@ Dat          <- Dat[Dat$Year >= 1950, ]
 Dat$Year5    <- Dat$Year - Dat$Year %% 5
 Dat$Age5     <- Dat$Age - Dat$Age %% 5
 
-#Dats <- subset(Dat, Year5 == 2000 & Age == 50 & Sex == "f")
+#chunk <- subset(Dat, Year5 == 2000 & Age == 0 & Sex == "f")
 #plot(Dats$ex,Dats$SD)
-
 
 Dat          <- data.table(Dat)
 DatMod       <- Dat[,get_brr_dt(.SD,xvar="ex",yvar="SD"),by=list(Sex, Year5, Age)]
-head(DatMod)
+
 
 # no need to scale b: 45 degrees = 1:1
 #summary(DatMod$xrange)
@@ -30,9 +29,6 @@ head(DatMod)
 DatMod <- data.frame(DatMod)
 Fem    <- DatMod[DatMod$Sex == "f", ]
 Mal    <- DatMod[DatMod$Sex == "m", ]
-
-head(Fem)
-x <- Fem[1,]
 
 xr <- 65
 yr <- 105
@@ -81,7 +77,7 @@ for (i in 1:nrow(Fem)){
 			year = x$Year5,   # lower bound of cell year
 			interval = 5,  # cell dimension
 			slope = x$b,  # slope of regression or whatever
-			length = x$rsq, # default meaning = interval - (2*pad)
+			length = abs(x$rp), # default meaning = interval - (2*pad)
 			pad = 0,   # edge pad if length = 1 and slope = 0 or Inf
 			lambda =  1)
 }
@@ -89,6 +85,7 @@ dev.off()
 
 grayrange <- c(0,.7)
 
+range(Fem$iqrdiag)
 		
 pdf("DR/Manuscript/Figures/FigApp3.pdf",width=width,height=height)
 par(mai=c(.3,.3,.1,.1))
@@ -106,11 +103,11 @@ for (i in 1:nrow(Fem)){
 			year = x$Year5,   # lower bound of cell year
 			interval = 5,  # cell dimension
 			slope = x$b,  # slope of regression or whatever
-			length = x$iqr/3, # default meaning = interval - (2*pad)
+			length = x$iqrdiag/3, # default meaning = interval - (2*pad)
 			pad = .05,   # edge pad if length = 1 and slope = 0 or Inf
 			lambda =  2,
-			col = gray(grayrange[2]-x$rsq*diff(grayrange)+grayrange[1]),
-			lwd = .5 + 2*x$rsq,
+			col = gray(grayrange[2]-abs(x$rp)*diff(grayrange)+grayrange[1]),
+			lwd = .5 + 2*abs(x$rp),
 			xpd=TRUE)
 }
 dev.off()
@@ -163,8 +160,8 @@ for (i in 1:nrow(Fem)){
 			length = x$iqr/3, # default meaning = interval - (2*pad)
 			pad = .05,   # edge pad if length = 1 and slope = 0 or Inf
 			lambda =  2,
-			col = gray(grayrange[2]-x$rsq*diff(grayrange)+grayrange[1]),
-			lwd = .5 + 2*x$rsq,
+			col = gray(grayrange[2]-abs(x$rp)*diff(grayrange)+grayrange[1]),
+			lwd = .5 + 2*abs(x$rp),
 			xpd=TRUE)
 }
 dev.off()
@@ -217,4 +214,8 @@ for (i in 1:nrow(Fem)){
 			lwd = .5 + x$rsq,
 			xpd=TRUE)
 }
+c(0.872,     0.829,     0.432,     0.286)
 
+sum(cumprod(c(0.872,     0.829,     0.432,     0.286)))
+
+barplot(cumprod(c(0.872,     0.829,     0.432,     0.286)))
