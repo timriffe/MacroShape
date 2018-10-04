@@ -11,8 +11,9 @@
 \usepackage{float}
 
 %\usepackage[active,tightpage]{preview}
-\usepackage{natbib}
-\bibpunct{(}{)}{,}{a}{}{;} 
+%\usepackage{natbib}
+%\bibpunct{(}{)}{,}{a}{}{;} 
+\usepackage[natbibapa]{apacite}
 \usepackage{url}
 \usepackage{nth}
 \usepackage{authblk}
@@ -41,7 +42,7 @@
 \title{Lexis fields}
 
 \author[1]{Tim Riffe\thanks{riffe@demogr.mpg.de}}
-\author[2]{Jos\'e Manuel Aburto \thanks{jmaburto@health.sdu.dk}}
+\author[2]{Jos\'e Manuel Aburto\thanks{jmaburto@health.sdu.dk}}
 \affil[1]{Max Planck Institute for Demographic Research}
 \affil[2]{Biodemography unit, Department of Public Health, University of Southern Denmark}
 
@@ -68,13 +69,13 @@ than standard Lexis surfaces.
 
 \onehalfspacing
 \section*{Introduction}
-Lexis surfaces are a graphical tool used to display data on the Lexis coordinate plane, a Cartesian plane that is also a simplex relationship between age, period, and cohort. Surfaces are often displayed as heat maps, contour maps, perspective plots, or variants of these things. Various kinds of quantities, such as raw magnitudes, differences, ratios, intensities, proportions, derivatives, and even compositions \citep{scholey2017visualizing} can be displayed on Lexis surfaces in order to put age, period, cohort, or other patterns in relief. 
+Lexis surfaces are a graphical tool used to display data on the Lexis coordinate plane, a Cartesian plane that is also a simplex relationship between age, period, and cohort. Surfaces are often displayed as heat maps, contour maps, perspective plots, or variants of these things \citep{vaupel1987thousands}. Various kinds of quantities, such as raw magnitudes, differences \citep{minton2017visualising}, ratios \citep{canudas2005age}, intensities, proportions, derivatives \citep{rau2017visualizing}, and even compositions \citep{scholey2017visualizing} can be displayed on Lexis surfaces in order to put age, period, cohort, or other patterns in relief. 
 
 Maps in general combine layers of categorical, continuous, and
 symbolic information on a common spatial projection. Lexis surfaces in contrast almost exclusively display one visual layer at a time. Even the composite surfaces of \citet{scholey2017visualizing}, which display layered information are rendered as a single visual layer. Small multiples of Lexis surfaces (for example panel plots of Lexis surfaces) on the other hand constitute a de-layering, as these are spatially disjoint, and this makes comparisons laborious for the viewer. We propose to enrich Lexis surfaces by adding a visual layer of quantitative information coded symbolically as a vector field, and we liken this to cartographic information layering.
 
 Vector fields are a graphical form generally used to display variation in speed,
-direction, or force over a plane. Point estimates of these quantities on the plane are
+direction, or force over a plane \citep{weiskopf2007vector}. Point estimates of these quantities on the plane are
 often represented with segments or arrows, where length may be proportional to a function of
 magnitude (force, speed), and angle indicates direction, potentially disambiguated with an arrowhead or articulated as a curve. We propose a fusion of Lexis surfaces and vector fields, \emph{Lexis fields}, as a tool to
 display variation in relationships between variables over age and time. A Lexis field may either be rendered atop on a Lexis surface, representing two map layers --- a true Lexis map --- or as a single-layer stand-alone visualization. 
@@ -104,7 +105,7 @@ We select all HMD data available for females after 1950. For each lifetable we c
 
 The first of these, Fig.~\ref{fig:sfig1}, is a bare-bones Lexis field that serves to illustrate the underlying concept. This display renders each regression slope as a line segment of equal length (4 ``years'' long) and centered on each Lexis cell. The slope of each pointer is rendered identical to regression slopes, which may be justified in this case, since Lexis cells fix a 1:1 year aspect ratio, while $e(x)$ and $sd(x)$ are also in year units. This is the truest and most literal depiction of how these regression slopes vary over age and time among HMD females, and nothing more. From this figure we can see, for example, that there is some age where the relationship turns from negative to positive, which increased slightly over time. Slopes dampened in younger ages around the 1980s, but have since increased (except infants).
 
-The second version, Fig.~\ref{fig:sfig2}, also renders slopes on a unity aspect ratio, but lengths are proportional to the Pearson' correlation coefficient's $r$. Other measures of model fit could be used to similar effect to scale some characteristic of the field pointers. For example, Fig.~\ref{fig:sfig3} renders slopes multiplied by two, with pointer lengths scaled proportional to the between-population interquartile range of the $e(x)$ and $sd(x)$ values used in regressions\footnote{Specifically, pointer length is proportional to the central spread of the relationship between $e(x)$ and $sd(x)$, approximated as $\sqrt{IQR(e(x))^2 + IQR(sd(x))^2}$}., and line weight and grayscale ``proportional'' to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher Pearson's $r$ results in more contrast in the field. 
+The second version, Fig.~\ref{fig:sfig2}, also renders slopes on a unity aspect ratio, but lengths are proportional to the Pearson' correlation coefficient's $r$. Other measures of model fit could be used to similar effect to scale some characteristic of the field pointers. For example, Fig.~\ref{fig:sfig3} renders slopes multiplied by two, with pointer lengths scaled proportional to the between-population interquartile range of the $e(x)$ and $sd(x)$ values used in regressions\footnote{Specifically, pointer length is proportional to the central spread of the relationship between $e(x)$ and $sd(x)$, approximated as $\sqrt{IQR(e(x))^2 + IQR(sd(x))^2}$}, and line weight and grayscale ``proportional'' to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher Pearson's $r$ results in more contrast in the field. 
 
 The final example, Fig.~\ref{fig:sfig4} is a true Lexis map. The base of the map is a filled contour plot of the mean (over HMD populations) coefficient of variation of the conditional remaining distribution $CV(x)$ in each single age and year. This map is redundantly coded with a sequential color palette and labelled contours, which liberates the surface from an explicit color legend. The same field from Fig.~\ref{fig:sfig3} is layered atop the CV surface, achieving a true layered map. In principle, one could represent variation in the slope of some other regression over age and time as a contour plot, with the present field atop, thereby layering comparable information. However, the present example serves to illustrate layering with the field.
 
@@ -144,7 +145,7 @@ lifespan, females (HMD).}
 \end{figure}
 
 \section{Discussion}
-We suggest the use of vector fields on the Lexis surface, introducing the notion of a Lexis field, which is a stadard vector field on a regular Lexis grid over age and time. We demonstrate some of the designer degrees of freedom in translating data into the elements of a Lexis field, as well as an instance of Lexis map layering. These examples serve to illustrate the construction of Lexis fields, but do not pretend to be ``best practice'' Lexis surface in terms of visual design or legibility. It is our sense that the patterns revealed in Figures~\ref{fig:sfig1}-\ref{fig:sfig3} are accessible to the viewer and lend themselves to substantive interpretation. This visual instrument indeed arose in practice in an attempt to investigate the apparently mechanical relationship between lifespan variation and average length of life with a macro view. Fig.~\ref{fig:sfig4} simply serves to illustrate that Lexis fields can be layered with traditional Lexis surfaces that are color coded, increasing the information and pattern density on the Lexis plane with little drawback in terms of legibility. 
+We suggest the use of vector fields on the Lexis surface, introducing the notion of a Lexis field, which is a standard vector field on a regular Lexis grid over age and time. We demonstrate some of the designer degrees of freedom in translating data into the elements of a Lexis field, as well as an instance of Lexis map layering. These examples serve to illustrate the construction of Lexis fields, but do not pretend to be ``best practice'' Lexis surfaces in terms of visual design or legibility. It is our sense that the patterns revealed in Figures~\ref{fig:sfig1}-\ref{fig:sfig3} are accessible to the viewer and lend themselves to substantive interpretation. This visual instrument indeed arose in practice in an attempt to investigate the apparently mechanical relationship between lifespan variation and average length of life with a macro view. Fig.~\ref{fig:sfig4} simply serves to illustrate that Lexis fields can be layered with traditional Lexis surfaces that are color coded, increasing the information and pattern density on the Lexis plane with little drawback in terms of legibility. 
 
 Although patterns in data may be much more complex than can be expressed with linear models, these simple model fits can be thought of as regular samples from the complex space implied by data, such that the pattern revealed on the Lexis field is still revealing. On the other hand a field may be derived from a single underlying pattern rather than a series of regressions on different populations or variables. For example, \citet{shang2018visualizing} recommends the use of derivative phase diagrams to represent the rate of change of the hypothetical lifecourse implied by period fertility curves. This construct could be translated to a Lexis field in a straightforward way, with pointers mapping to the notions of acceleration and velocity. Certainly variants of vector fields could be used to intuitively render other demographic phenomena and components of demographic change, and these do not need to adhere to the Lexis grid. Indeed, we suggest the use of fields based on demographic relationships in spatial settings.
 
@@ -161,11 +162,9 @@ Code used to produce the experimental visualizations here is available in a gith
 %We wish to thank \blackout{Alyson van Raalte} for helpful comments received that improved this manuscript.
 We wish to thank Alyson van Raalte for helpful comments received that improved this manuscript.
 
-\nocite{vaupel1987thousands}
-\nocite{weiskopf2007vector}
 \FloatBarrier
 \singlespacing
-\bibliographystyle{plainnat}
+\bibliographystyle{apacite}
   \bibliography{references} 
 
 \end{document}
