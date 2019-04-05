@@ -39,16 +39,16 @@ get_brr <- function(chunk, xvar = "ex", yvar = "CV"){
 }
 
 get_brr_dt <- function(chunk, xvar = "ex", yvar = "CV"){
-	chunk <- data.frame(chunk)
-	xr    <- diff(range(chunk[, xvar]))
-	iqrx   <- diff(quantile(chunk[, xvar],c(.25,.75)))
-	iqry   <- diff(quantile(chunk[, yvar],c(.25,.75)))
+	chunk   <- data.frame(chunk)
+	xr      <- diff(range(chunk[, xvar]))
+	iqrx    <- diff(quantile(chunk[, xvar],c(.25,.75)))
+	iqry    <- diff(quantile(chunk[, yvar],c(.25,.75)))
 	iqrdiag <- sqrt(iqrx^2 + iqry^2)
-	mod   <- get_mod(chunk, xvar = xvar, yvar = yvar)
-	rp    <- cor(chunk[,xvar],chunk[,yvar], method = "pearson")
+	mod     <- get_mod(chunk, xvar = xvar, yvar = yvar)
+	rp      <- cor(chunk[,xvar],chunk[,yvar], method = "pearson")
 	# total least square version:
-	v     <- prcomp(chunk[,c(xvar,yvar)],rank. = 1)$rotation
-	beta  <- v[-ncol(v),ncol(v)] / v[ncol(v),ncol(v)]
+	v       <- prcomp(chunk[,c(xvar,yvar)],rank. = 1)$rotation
+	beta    <- v[-ncol(v),ncol(v)] / v[ncol(v),ncol(v)]
 	data.frame(b=mod$coef[2], rsq = summary(mod)$r.s, xrange = xr, iqrx = iqrx, iqrdiag = iqrdiag,rp = rp, tlsb = beta)
 }
 

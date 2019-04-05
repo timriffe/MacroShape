@@ -124,7 +124,11 @@ DatCV        <- Dat[,mean(CV),by=list(Sex, Year, Age)]
 CV           <- acast(DatCV[Sex=="f" & Year < 2013], Age~Year,value.var ="V1")
 
 breaks       <- pretty(CV, 25)
-ramp <- colorRampPalette(brewer.pal(9,"YlOrRd"),space="Lab")
+
+
+library(colorspace)
+hcl_palettes(plot=TRUE)
+ramp         <- colorRampPalette(brewer.pal(9,"YlOrRd"),space="Lab")
 
 pdf("DR/Manuscript/Figures/FigApp4.pdf",width=width,height=height)
 par(mai=c(.3,.3,.1,.1))
@@ -198,7 +202,7 @@ plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab 
 #		ylim=c(0,105),
 #		asp=1,
 #		add=TRUE)
-Int <- 3 # so that segment midpoint crosses cell centroid, even though the cell size for rendering
+Int <- 2# so that segment midpoint crosses cell centroid, even though the cell size for rendering
 # has been expanded.
 for (i in 1:nrow(Fem)){
 	x <- Fem[i,]
@@ -214,8 +218,8 @@ for (i in 1:nrow(Fem)){
 			lwd = .5 + x$rsq,
 			xpd=TRUE)
 }
-c(0.872,     0.829,     0.432,     0.286)
-
-sum(cumprod(c(0.872,     0.829,     0.432,     0.286)))
-
-barplot(cumprod(c(0.872,     0.829,     0.432,     0.286)))
+#c(0.872,     0.829,     0.432,     0.286)
+#
+#sum(cumprod(c(0.872,     0.829,     0.432,     0.286)))
+#
+#barplot(cumprod(c(0.872,     0.829,     0.432,     0.286)))

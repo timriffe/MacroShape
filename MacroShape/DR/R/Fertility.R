@@ -44,26 +44,44 @@ DAT$logFM <- log(DAT$ASFRf/DAT$ASFRm)
 DAT$logFM[is.infinite(DAT$logFM)] <- NA
 
 ASFRf  <- acast(DAT, Age~Year, value.var = "ASFRf")
-age    <- 15:50
-yrs    <- 1968:2015
-ramp1  <- colorRampPalette(brewer.pal(9,"Greens"),space="Lab")
-breaks <- seq(0,.21,by=.01)
-image(yrs,age,t(ASFRf),asp=1,breaks=breaks,col=ramp1(length(breaks)-1))
+logFM  <- acast(DAT, Age~Year, value.var = "logFM")
 
+# bound the cells: an extra age/yr at end
+age    <- 15:51
+yrs    <- 1968:2016
+#ramp1  <- colorRampPalette(brewer.pal(9,"Greens"),space="Lab")
 
-pad <- .25
+breaks <- seq(0,.17,by=.01)
+sequential_hcl(17, "BurgYl")
+ASFRf[ASFRf==0] <- NA
+
+pdf("PAA/FertilityFM.pdf",width=8.717660,height= 7.466169)
+# heat map
+image(yrs,age,t(ASFRf),
+		asp=1,breaks=breaks,
+		col=sequential_hcl(length(breaks)-1, 
+				"BurgYl", rev=TRUE),
+		las=1, xlab="", ylab="")
+# labelled contours, redundant with color
+contour(1968.5:2015.5,15.5:50.5,t(ASFRf),add=TRUE, labcex=.6,col="#00000070")
+
+# add single contour for M==F
+contour(1968.5:2015.5,15.5:50.5,t(logFM),add=TRUE, labcex=1,col="#FFFFFFAA",lwd=2,levels=0,drawlabels=FALSE)
+
+# draw field
+pad <- .3
 gs  <- 2
 for (a in seq(15,49,by=gs)){
 	for (y in seq(1968,2015,by=gs)){
 		mr <- mean(DAT[Age >= a & Age < (a+gs) &
 								Year >= y & Year < (y+gs) &
 								Country == "Sweden"]$logFM)
-		draw_vector(slope = mr, len = 1.8, year=y,age=a,N=2)
+		draw_vector(slope = mr, len = gs-(pad*2), year=y,age=a,N=gs,col="#FFFFFF90")
 	}
 }
 
 # end
-
+dev.off()
 
 
 
