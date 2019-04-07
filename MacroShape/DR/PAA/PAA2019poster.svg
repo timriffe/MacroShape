@@ -136,15 +136,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.088388348"
-     inkscape:cx="3753.7346"
-     inkscape:cy="2635.3893"
+     inkscape:zoom="0.10449173"
+     inkscape:cx="3833.8062"
+     inkscape:cy="1986.1084"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
-     inkscape:window-width="1280"
-     inkscape:window-height="999"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -156,7 +156,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -186,17 +186,27 @@
          id="flowRegion2991"><rect
            id="rect2993"
            width="978.06177"
-           height="1121.8944"
+           height="1294.3204"
            x="316.43173"
            y="611.30658"
            style="font-size:40px;font-weight:normal;-inkscape-font-specification:Liberation Sans" /></flowRegion><flowPara
-         id="flowPara2999">Data arranged by age and time is often viewed on the Lexis surface by adding contours or shading atop the Lexis diagram. This lets you see one layer of information at a time. There are proposals to visualize compositional data on such surfaces, but bivariate surfaces are basically unheard of for demographic data on the Lexis grid.</flowPara><flowPara
+         id="flowPara2999">Data arranged by age and time is often viewed on the Lexis surface by adding contours or shading to the Lexis diagram. This lets you see one layer of information at a time. Bivariate surfaces are basically unheard of for demographic data on the Lexis grid.</flowPara><flowPara
          id="flowPara3009" /><flowPara
-         id="flowPara3011">In general, demographers should label features and regions directly on maps, just as cartographers do. We  propose adding a layer of symbolically encoded information to the classic Lexis surface: vector fields. Vector fields  </flowPara><flowPara
+         id="flowPara13627">In general, demographers should label features and regions directly on maps, just as cartographers do. <flowSpan
+   style="font-weight:bold;-inkscape-font-specification:Liberation Sans Bold"
+   id="flowSpan13645">We  propose adding a layer of symbolically encoded information to the classic Lexis surface: vector fields.</flowSpan> Vector fields use segments or arrows to display variation in force and direction over a coordinate plane,</flowPara><flowPara
+         id="flowPara13633"></flowPara><flowPara
+         id="flowPara13635">A vector field on a coordinate plane defined by age and time (or similar) is snapped to the Lexis plane, and could be called a <flowSpan
+   style="font-style:italic;font-weight:bold;-inkscape-font-specification:Liberation Sans Bold Italic"
+   id="flowSpan13643">Lexis field</flowSpan>, but even <flowSpan
+   style="font-weight:bold;-inkscape-font-specification:Liberation Sans Bold"
+   id="flowSpan13641">higher information densities</flowSpan> can be acheived without (we think) loss in legibility by overlapping Lexis fields with Lexis surfaces.</flowPara><flowPara
+         id="flowPara13637"></flowPara><flowPara
+         id="flowPara13639"> </flowPara><flowPara
          id="flowPara3005" /><flowPara
          id="flowPara3007" /></flowRoot>    <g
        id="g4586"
-       transform="matrix(2,0,0,2,-1130.1245,-254.04656)">
+       transform="matrix(2,0,0,2,-1130.1245,-142.04656)">
       <g
          style="stroke:#646464;stroke-width:0.40000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          id="g1284-0-3-8"
@@ -4062,6 +4072,7 @@
              style="font-size:40px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans;font-style:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;text-anchor:start;baseline-shift:baseline;color:#000000;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate">1<tspan
    id="tspan51915"
    style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">9</tspan>
+
 70</tspan>
         </text>
         <text
@@ -52652,7 +52663,7 @@
            x="5962.3242"
            y="134.94719"
            style="font-size:40px" /></flowRegion><flowPara
-         id="flowPara34597"></flowPara></flowRoot>    <flowRoot
+         id="flowPara34597" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot34599"
        style="font-size:150px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
@@ -52667,18 +52678,7 @@
          id="flowPara34605"
          style="font-size:40px;font-weight:normal;-inkscape-font-specification:Liberation Sans">Filled contour: coefficient of variation of remaining lifespan (HMD average)</flowPara><flowPara
          style="font-size:40px;font-weight:normal;-inkscape-font-specification:Liberation Sans"
-         id="flowPara34607">Vector field: relationship between remaining life expectancy and the standard deviation of remaining lifespan. Slopes are linear regression coefficients, length proportional to spread in both variables, darker line shades indicate stronger correlation.</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot51917"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Sans Bold"
-       transform="translate(0,-3087.6403)"><flowRegion
-         id="flowRegion51919"><rect
-           id="rect51921"
-           width="922.06696"
-           height="197.9899"
-           x="7817.7725"
-           y="129.29034" /></flowRegion><flowPara
-         id="flowPara51923">Center on Population Dynamics (CPop) and Department of Public Health, University of Southern Denmark, Odense</flowPara></flowRoot>    <g
+         id="flowPara34607">Vector field: relationship between remaining life expectancy and the standard deviation of remaining lifespan. Slopes are linear regression coefficients, length proportional to spread in both variables, darker line shades indicate stronger correlation.</flowPara></flowRoot>    <g
        transform="matrix(1.25,0,0,-1.25,7795.9877,-2453.3206)"
        id="g12-9">
       <g
@@ -53149,17 +53149,317 @@
          style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
          d="m 116.633,4.796135 0,5.254 0.672,0 0,-2.27 1.84,0 0,2.27 0.671,0 0,-5.254 -0.671,0 0,2.402 -1.84,0 0,-2.402 -0.672,0 z" />
     </g>
+    <flowRoot
+       transform="translate(2433.3746,-772.14467)"
+       xml:space="preserve"
+       id="flowRoot2989-1"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"><flowRegion
+         id="flowRegion2991-6"><rect
+           id="rect2993-7"
+           width="978.06177"
+           height="1294.3204"
+           x="316.43173"
+           y="611.30658"
+           style="font-size:40px;font-weight:normal;-inkscape-font-specification:Liberation Sans" /></flowRegion><flowPara
+         id="flowPara13635-5">We have male and female fertility rates for Sweden, years 1968 to 2015. </flowPara><flowPara
+         id="flowPara13768" /><flowPara
+         id="flowPara13770">This figure has two layers: </flowPara><flowPara
+         id="flowPara13794" /><flowPara
+         id="flowPara13772">1) a filled contour Lexis surface of female fertility rates for Sweden.</flowPara><flowPara
+         id="flowPara13774">2) a vector field showing the log ratio of female to male fertility. Upward sloping segments mean that female fertility is higher, and vice versa. The crossover age (the age where male and female rates are equal) is shown with a thick white line. </flowPara><flowPara
+         id="flowPara13790" /><flowPara
+         id="flowPara13792">Each layer is interesting all by itself, but here we can see that the crossover age is higher than the modal age of female fertility in a quite regular way, and that increases in the crossover age have roughly kept pace with increases in the age of motherhood. </flowPara><flowPara
+         id="flowPara13796" /><flowPara
+         id="flowPara13798">There are other ways to show as much information as this: Two surfaces: a rate surface and a log ratio surface, or just two rate surfaces (where we'd lose the ratio)</flowPara><flowPara
+         id="flowPara13786" /><flowPara
+         id="flowPara13788" /><flowPara
+         id="flowPara13782" /><flowPara
+         id="flowPara13637-5" /><flowPara
+         id="flowPara13639-8" /><flowPara
+         id="flowPara3005-2" /><flowPara
+         id="flowPara3007-8" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="1582.5195"
+       y="507.17212"
+       id="text13709"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-3087.6403)"><tspan
+         sodipodi:role="line"
+         id="tspan13711"
+         x="1582.5195"
+         y="507.17212"
+         style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">Increase information density, and enable </tspan><tspan
+         sodipodi:role="line"
+         x="1582.5195"
+         y="632.17212"
+         style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         id="tspan13715">cross-variable comparisons on the Lexis surface</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:500px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Sans Bold"
-       x="679.2486"
-       y="-3131.7773"
-       id="text62750"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="2681.4021"
+       y="965.9519"
+       id="text13717"
        sodipodi:linespacing="125%"
-       transform="matrix(0.90726687,0.42055537,-0.42055537,0.90726687,0,0)"><tspan
+       transform="translate(0,-3087.6403)"><tspan
          sodipodi:role="line"
-         id="tspan62752"
-         x="679.2486"
-         y="-3131.7773">just rounding up the pieces</tspan></text>
+         id="tspan13719"
+         x="2681.4021"
+         y="965.9519"
+         style="font-size:100px">Example 1: female and male fertility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="5640.8857"
+       y="-2677.6707"
+       id="text13717-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan13719-5"
+         x="5640.8857"
+         y="-2677.6707"
+         style="font-size:100px">Example 2: life expectancy vs disparity</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="3865.512"
+       y="2894.3093"
+       id="text13758"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-3087.6403)"><tspan
+         sodipodi:role="line"
+         id="tspan13760"
+         x="3865.512"
+         y="2894.3093">Thanks to Christian Dudel and Sebastian Klüsener</tspan><tspan
+         sodipodi:role="line"
+         x="3865.512"
+         y="2919.3093"
+         id="tspan13762">for sharing these data! FYI, these and other male </tspan><tspan
+         sodipodi:role="line"
+         x="3865.512"
+         y="2944.3093"
+         id="tspan13764">fertiltiy rates will soon be part of the Human Fertility</tspan><tspan
+         sodipodi:role="line"
+         x="3865.512"
+         y="2969.3093"
+         id="tspan13766">Collection.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="2799.2852"
+       y="3262.0344"
+       id="text13776"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-3087.6403)"><tspan
+         sodipodi:role="line"
+         id="tspan13778"
+         x="2799.2852"
+         y="3262.0344" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="3851.4277"
+       y="219.69885"
+       id="text13758-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="219.69885"
+         id="tspan13766-3">Logging the ratios makes sense (here and in other</tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="244.69885"
+         id="tspan13841">visualization contexts) because 1/2 and 2 are in a </tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="269.69885"
+         id="tspan13847">sense the same distance from 1. When we translate</tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="294.69885"
+         id="tspan13849">to slopes on the field, these end up being the same </tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="319.69885"
+         id="tspan13851">slope magnitude, but either down-sloping or </tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="344.69885"
+         id="tspan13853">upsloping, respectively. Here's a rough key to eyeball:</tspan><tspan
+         sodipodi:role="line"
+         x="3851.4277"
+         y="369.69885"
+         id="tspan13843" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13855"
+       style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       transform="translate(135.68213,-2864.6301)"><flowRegion
+         id="flowRegion13857"><rect
+           id="rect13859"
+           width="915.67169"
+           height="323.47098"
+           x="338.40042"
+           y="1681.6206"
+           style="font-size:100px" /></flowRegion><flowPara
+         id="flowPara13861"
+         style="font-size:100px">How to </flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="1419.8678"
+       y="-1969.0571"
+       id="text13758-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1419.8678"
+         y="-1969.0571"
+         id="tspan13766-5">There are proposals to visualize compositional</tspan><tspan
+         sodipodi:role="line"
+         x="1419.8678"
+         y="-1944.0571"
+         id="tspan13904">data on the Lexis surface, which is in some </tspan><tspan
+         sodipodi:role="line"
+         x="1419.8678"
+         y="-1919.0571"
+         id="tspan13908">ways similar. See Schöley and Willekens (2017)</tspan></text>
+    <g
+       id="g13998"
+       transform="matrix(0.3,0,0,0.3,1896.2869,-1984.4706)">
+      <rect
+         id="rect13987"
+         height="245"
+         width="245"
+         y="0"
+         x="0"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="elements">
+        <path
+           id="path13990"
+           d="m 7,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -140,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -154,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -182,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -196,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -203,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 49,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 56,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 56,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 56,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m -168,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 63,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -217,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -224,7 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m -203,7 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 21,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 42,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 49,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m -210,7 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 28,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 7,0 7,0 0,7 -7,0 z m 35,0 7,0 0,7 -7,0 z m 14,0 7,0 0,7 -7,0 z"
+           style="fill:#000000"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g14899"
+       transform="translate(2005.6386,1485.844)">
+      <text
+         transform="matrix(0.82334575,-0.56754011,0.56754011,0.82334575,0,0)"
+         sodipodi:linespacing="125%"
+         id="text14832"
+         y="294.04703"
+         x="2113.4163"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="294.04703"
+           x="2113.4163"
+           id="tspan14834"
+           sodipodi:role="line">female fertility double male </tspan></text>
+      <text
+         transform="matrix(0.81696223,0.57669118,-0.57669118,0.81696223,0,0)"
+         sodipodi:linespacing="125%"
+         id="text14832-9"
+         y="-1850.1681"
+         x="1020.3253"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="-1850.1681"
+           x="1020.3253"
+           id="tspan14834-8"
+           sodipodi:role="line">male fertility double female</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text14857"
+         y="-940.58374"
+         x="1919.0361"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px"
+           y="-940.58374"
+           x="1919.0361"
+           id="tspan14859"
+           sodipodi:role="line">male fertility = female fertility</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="3614.2017"
+       y="-480.92828"
+       id="text14907"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.98695737,-0.1609818,0.1609818,0.98695737,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan14909"
+         x="3614.2017"
+         y="-480.92828">Male fertility = female fertility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="3742.314"
+       y="1592.4481"
+       id="text14911"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.83502159,-0.55021718,0.55021718,0.83502159,0,0)"
+       inkscape:transform-center-x="-11.96267"
+       inkscape:transform-center-y="148.3371"><tspan
+         sodipodi:role="line"
+         id="tspan14913"
+         x="3742.314"
+         y="1592.4481">female fertility higher</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="2234.719"
+       y="-3598.366"
+       id="text14911-2"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.79975788,0.60032269,-0.60032269,0.79975788,0,0)"
+       inkscape:transform-center-x="134.94871"
+       inkscape:transform-center-y="60.454272"><tspan
+         sodipodi:role="line"
+         id="tspan14913-6"
+         x="2234.719"
+         y="-3598.366">male fertility higher</tspan></text>
+    <g
+       transform="matrix(1.875,0,0,-1.875,197.29926,206.13316)"
+       id="g4403">
+      <path
+         d="m 103.0215,709.1714 c 2.045,-26.069 -1.063,-53.471 -1.063,-53.471 l 11.797,-12.91 -54.297,-0.008 3.974,43.983 c 0,0 -4.324,-4.658 -9.204,-0.221 5.102,0.888 3.893,6.448 3.893,6.448 -15.868,7.559 -45.61,24.045 10.396,42.497"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path38-0"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 68.5176,735.4899 c 1.08,7.02 -11.88,25.83 1.891,34.471 8.51,5.339 21.869,-1.35 27.269,-12.961 -2.657,-1.423 -5.939,-1.08 -5.939,-1.08 l -2.246,-16.455 c 0,0 10.734,-24.693 46.955,-28.717"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path42-4"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 90.0352,747.4175 c -12.256,-1.557 -18.111,9.089 -18.093,14.785"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path46-7"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 82.5566,761.0504 c 0,-0.896 0.725,-1.62 1.621,-1.62 0.895,0 1.619,0.724 1.619,1.62 0,0.896 -0.724,1.62 -1.619,1.62 -0.896,0 -1.621,-0.724 -1.621,-1.62"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path50-16"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 87.4609,678.4303 -0.053,-35.37"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path54-2"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 103.6074,705.8864 c 4.83,-4.024 18.083,-10.433 31.498,-11.506"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path58-8"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 128.1299,703.235 c 0,0 5.366,-1.074 6.976,-1.342"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path62-3"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>

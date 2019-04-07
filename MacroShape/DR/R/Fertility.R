@@ -82,7 +82,7 @@ for (a in seq(15,49,by=gs)){
 
 # end
 dev.off()
-
+.69 * 100
 
 
 
