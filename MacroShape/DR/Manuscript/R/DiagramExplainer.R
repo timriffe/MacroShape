@@ -1,7 +1,7 @@
 ###############################################################################
 # Comment B.4: make Fig 1 relate more directly to Fig 2. Interpretation: use Fig 2 results to make sub-scatterplots on the Lexis surface? Tricky due to scale box. Hmmm. Maybe just add pointers to field, but the real ones, including a real scatter from Fig 2?
-setwd("/home/tim/git/MacroShape/MacroShape")
-source("R/LexisFieldFunctions.R")
+library(here)
+source(here("MacroShape","DR","Manuscript","R","LexisFieldFunctions.R"))
 # 1)
 # generic relationship conditioned on a particular age and time.
 # y = m*x+b

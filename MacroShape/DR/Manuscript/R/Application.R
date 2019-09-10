@@ -1,12 +1,14 @@
-
-# Author: tim
-###############################################################################
-setwd("/home/tim/git/MacroShape/MacroShape/")
+#######################################################################
 library(data.table)
 library(reshape2)
+library(here)
 library(RColorBrewer)
-source("DR/Manuscript/R/ApplicationFunctions.R")
-Dat          <- local(get(load("/home/tim/git/DistributionTTD/DistributionTTD/Data/HMDresults.Rdata")))
+library(colorspace)
+# hcl_palettes(plot=TRUE)
+rm(list = ls(all.names = TRUE))
+source(here("MacroShape","DR","Manuscript","R","ApplicationFunctions.R"))
+
+Dat          <- readRDS(here("MacroShape","Data","HMDresults.rds"))
 
 Dat$SD       <- sqrt(Dat$Var)
 
@@ -16,28 +18,24 @@ Dat          <- Dat[Dat$Year >= 1950, ]
 Dat$Year5    <- Dat$Year - Dat$Year %% 5
 Dat$Age5     <- Dat$Age - Dat$Age %% 5
 
-#chunk <- subset(Dat, Year5 == 2000 & Age == 0 & Sex == "f")
-#plot(Dats$ex,Dats$SD)
-
 Dat          <- data.table(Dat)
-DatMod       <- Dat[,get_brr_dt(.SD,xvar="ex",yvar="SD"),by=list(Sex, Year5, Age)]
+DatMod       <- Dat[, 
+                    get_brr_dt(.SD, xvar="ex", yvar = "SD"), 
+                    by = list(Sex, Year5, Age)]
 
 
 # no need to scale b: 45 degrees = 1:1
-#summary(DatMod$xrange)
-# DatMod$xrange
-DatMod <- data.frame(DatMod)
-Fem    <- DatMod[DatMod$Sex == "f", ]
-Mal    <- DatMod[DatMod$Sex == "m", ]
+Fem    <- DatMod[DatMod$Sex == "f"]
+Mal    <- DatMod[DatMod$Sex == "m"]
 
-xr <- 65
-yr <- 105
+xr     <- 65
+yr     <- 105
 scalef <- .1
-width <- xr * scalef + .4
+width  <- xr * scalef + .4
 height <- yr * scalef + .4
 
 
-pdf("DR/Manuscript/Figures/FigApp1.pdf", width = width, height = height)
+pdf(here("MacroShape","DR","Manuscript","Figures","FigApp1.pdf"), width = width, height = height)
 par(mai=c(.3,.3,.1,.1))
 plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
@@ -60,7 +58,7 @@ for (i in 1:nrow(Fem)){
 }
 dev.off()
 
-pdf("DR/Manuscript/Figures/FigApp2.pdf", width = width, height = height)
+pdf(here("MacroShape","DR","Manuscript","Figures","FigApp2.pdf"), width = width, height = height)
 par(mai=c(.3,.3,.1,.1))
 plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
@@ -87,7 +85,7 @@ grayrange <- c(0,.7)
 
 range(Fem$iqrdiag)
 		
-pdf("DR/Manuscript/Figures/FigApp3.pdf",width=width,height=height)
+pdf(here("MacroShape","DR","Manuscript","Figures","FigApp3.pdf"),width=width,height=height)
 par(mai=c(.3,.3,.1,.1))
 plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
@@ -114,23 +112,21 @@ dev.off()
 
 
 # what about where the background is the mean CV?
-Dat          <- local(get(load("/home/tim/git/DistributionTTD/DistributionTTD/Data/HMDresults.Rdata")))
-Dat          <- Dat[Dat$Age < 105, ]
-Dat          <- Dat[Dat$Year >= 1950, ]
+Dat          <- readRDS(here("MacroShape","Data","HMDresults.rds"))
+Dat          <- Dat[Dat$Age < 105]
+Dat          <- Dat[Dat$Year >= 1950]
 Dat          <- data.table(Dat)
-DatCV        <- Dat[,mean(CV),by=list(Sex, Year, Age)]
+DatCV        <- Dat[, mean(CV), by = list(Sex, Year, Age)]
 
 
-CV           <- acast(DatCV[Sex=="f" & Year < 2013], Age~Year,value.var ="V1")
+CV           <- acast(DatCV[Sex == "f" & Year < 2013], Age~Year,value.var ="V1")
 
 breaks       <- pretty(CV, 25)
 
 
-library(colorspace)
-hcl_palettes(plot=TRUE)
-ramp         <- colorRampPalette(brewer.pal(9,"YlOrRd"),space="Lab")
+ramp         <- colorRampPalette(brewer.pal(9, "YlOrRd"), space = "Lab")
 
-pdf("DR/Manuscript/Figures/FigApp4.pdf",width=width,height=height)
+pdf(here("MacroShape", "DR", "Manuscript", "Figures", "FigApp4.pdf"), width = width, height = height)
 par(mai=c(.3,.3,.1,.1))
 plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(

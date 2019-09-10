@@ -2,6 +2,15 @@
 # Author: tim
 ###############################################################################
 
+# contents:
+#get_field_element()
+# get_brr()
+# get_brr_dt()
+# get_chunk()
+# get_coefs()
+# get_field()
+# get_mod()
+# get_slope()
 
 # function to select subset:
 

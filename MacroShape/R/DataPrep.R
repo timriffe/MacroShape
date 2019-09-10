@@ -44,8 +44,6 @@ attr(LT,"timestamp") <- Sys.Date()
 saveRDS(LT, file = here("MacroShape","Data","HMDltper.rds"))
 }
 
-
-
 LT <- readRDS(here("MacroShape","Data","HMDltper.rds"))
 # These calcs might take a while.
 

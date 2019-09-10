@@ -4,10 +4,9 @@
 Dat <- readRDS(here("MacroShape","Data","HMDresults.rds"))
 
 Dat$SD       <- sqrt(Dat$Var)
-source(here("MacroShape","DR","R","LexisFieldFuncions.R"))
 
-# for JM
-#source("C:/Users/jmaburto/Documents/GitHub/MacroShape/MacroShape/R/LexisFieldFunctions.R")
+source(here("MacroShape","DR","Manuscript","R","LexisFieldFunctions.R"))
+
 
 library(RColorBrewer)
 library(data.table)
