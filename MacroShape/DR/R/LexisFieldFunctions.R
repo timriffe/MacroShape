@@ -2,6 +2,19 @@
 # Author: tim
 ###############################################################################
 
+# contents
+
+# draw_field()
+# draw_field_element()
+# draw_slope()
+# draw_vector()
+# draw_vector_field()
+# get_chunk()
+# get_coefs()
+# get_field()
+# get_slope()
+# get_vector_field()
+
 
 # function to select subset:
 get_chunk <- function(year, age, sex = "m", N = 10, Dat){

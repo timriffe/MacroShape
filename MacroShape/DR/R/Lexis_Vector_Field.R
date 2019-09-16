@@ -1,15 +1,12 @@
 # Author: tim
 ###############################################################################
 
-Dat <- local(get(load("/home/tim/git/DistributionTTD/DistributionTTD/Data/HMDresults.Rdata")))
-# for JM
-#Dat <- get(load("C:/Users/jmaburto/Documents/Riffe&Aburto_macroshapedata/HMDresults.Rdata"))
+Dat <- readRDS(here("MacroShape","Data","HMDresults.rds"))
 
 Dat$SD       <- sqrt(Dat$Var)
-source("/home/tim/git/MacroShape/MacroShape/DR/R/LexisFieldFunctions.R")
 
-# for JM
-#source("C:/Users/jmaburto/Documents/GitHub/MacroShape/MacroShape/R/LexisFieldFunctions.R")
+source(here("MacroShape","DR","Manuscript","R","LexisFieldFunctions.R"))
+
 
 library(RColorBrewer)
 library(data.table)
