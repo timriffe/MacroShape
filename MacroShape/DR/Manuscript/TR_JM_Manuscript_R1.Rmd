@@ -30,6 +30,7 @@ options(tinytex.verbose = TRUE)
 ```
 \newpage
 
+TODO TR: add area examples. Annotate Fig 1. Swap contour in Fig 4. Swap Pearson r for r2.
 # Introduction
 
 Lexis surfaces are a graphical tool used to display data on the Lexis coordinate plane, a Cartesian plane that is also a simplex relationship between age, period, and cohort. Surfaces are often displayed as heat maps, contour maps, perspective plots, or variants of these things [@vaupel1987thousands]. Various kinds of quantities, such as raw magnitudes, differences [@minton2017visualising], ratios [@canudas2005age], intensities, proportions, derivatives [@rau2017visualizing], and even compositions [@scholey2017visualizing] can be displayed on Lexis surfaces in order to put age, period, cohort, or other patterns in relief. 
