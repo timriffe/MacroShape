@@ -13,7 +13,7 @@
    height="450"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="ExplainerDiagram.svg">
   <defs
      id="defs4">
@@ -97,15 +97,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70312853"
-     inkscape:cx="292.12073"
-     inkscape:cy="161.4839"
+     inkscape:zoom="1.9887478"
+     inkscape:cx="255.62162"
+     inkscape:cy="130.21501"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
      inkscape:window-width="1280"
-     inkscape:window-height="999"
+     inkscape:window-height="996"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -3125,9 +3125,10 @@
        id="g1200">
       <text
          transform="matrix(1,0,0,-1,19.38,10.75)"
-         id="text1202">
+         id="text1202"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3135,9 +3136,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,38.72,10.75)"
-         id="text1206">
+         id="text1206"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3145,9 +3147,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,58.05,10.75)"
-         id="text1210">
+         id="text1210"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3155,9 +3158,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,77.38,10.75)"
-         id="text1214">
+         id="text1214"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3165,9 +3169,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,96.72,10.75)"
-         id="text1218">
+         id="text1218"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3175,9 +3180,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,116.05,10.75)"
-         id="text1222">
+         id="text1222"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3185,9 +3191,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,135.38,10.75)"
-         id="text1226">
+         id="text1226"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999 11.676"
            y="0"
            sodipodi:role="line"
@@ -3195,18 +3202,20 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,16.07,20.46)"
-         id="text1230">
+         id="text1230"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0"
            y="0"
            id="tspan1232">0</tspan>
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,39.79)"
-         id="text1234">
+         id="text1234"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3214,9 +3223,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,59.12)"
-         id="text1238">
+         id="text1238"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3224,9 +3234,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,78.46)"
-         id="text1242">
+         id="text1242"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3234,9 +3245,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,97.79)"
-         id="text1246">
+         id="text1246"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3244,9 +3256,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,117.12)"
-         id="text1250">
+         id="text1250"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3254,9 +3267,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,136.46)"
-         id="text1254">
+         id="text1254"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3264,9 +3278,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,155.79)"
-         id="text1258">
+         id="text1258"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3274,9 +3289,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,175.12)"
-         id="text1262">
+         id="text1262"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3284,9 +3300,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,12.18,194.46)"
-         id="text1266">
+         id="text1266"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892"
            y="0"
            sodipodi:role="line"
@@ -3294,9 +3311,10 @@
       </text>
       <text
          transform="matrix(1,0,0,-1,8.29,213.79)"
-         id="text1270">
+         id="text1270"
+         style="line-height:0%">
         <tspan
-           style="font-size:7px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           style="font-variant:normal;font-weight:normal;font-size:7px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            x="0 3.892 7.7839999"
            y="0"
            sodipodi:role="line"
@@ -3330,270 +3348,300 @@
          clip-path="url(#clipPath20-0)">
         <text
            transform="matrix(1,0,0,-1,183.59,85.08)"
-           id="text24">
+           id="text24"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan26">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,67.99,48.28)"
-           id="text28">
+           id="text28"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan30">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,98.88,47.94)"
-           id="text32">
+           id="text32"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan34">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,75.23,69.1)"
-           id="text36">
+           id="text36"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan38">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,134.68,77.28)"
-           id="text40">
+           id="text40"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan42">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,61.35,32.85)"
-           id="text44">
+           id="text44"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan46">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,102.51,66.18)"
-           id="text48">
+           id="text48"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan50">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,156.23,91.23)"
-           id="text52">
+           id="text52"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan54">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,28.91,37.33)"
-           id="text56">
+           id="text56"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan58">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,176.58,86.29)"
-           id="text60">
+           id="text60"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan62">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,76.48,68.55)"
-           id="text64">
+           id="text64"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan66">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,169.88,92.37)"
-           id="text68">
+           id="text68"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan70">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,77.9,42.11)"
-           id="text72">
+           id="text72"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan74">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,75.49,20.95)"
-           id="text76">
+           id="text76"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan78">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,102.1,74.09)"
-           id="text80">
+           id="text80"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan82">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,179.73,90.87)"
-           id="text84">
+           id="text84"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan86">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,174.53,89.12)"
-           id="text88">
+           id="text88"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan90">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,85.98,65.23)"
-           id="text92">
+           id="text92"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan94">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,158.29,93.11)"
-           id="text96">
+           id="text96"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan98">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,192.5,104.17)"
-           id="text100">
+           id="text100"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan102">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,94.32,68.31)"
-           id="text104">
+           id="text104"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan106">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,146.19,87.69)"
-           id="text108">
+           id="text108"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan110">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,87.85,54.98)"
-           id="text112">
+           id="text112"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan114">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,73.92,23.16)"
-           id="text116">
+           id="text116"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan118">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,154.51,89.03)"
-           id="text120">
+           id="text120"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan122">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,51.02,38.33)"
-           id="text124">
+           id="text124"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan126">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,145.93,75.71)"
-           id="text128">
+           id="text128"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan130">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,35.9,14.25)"
-           id="text132">
+           id="text132"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan134">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,59.01,36.24)"
-           id="text136">
+           id="text136"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan138">●</tspan>
         </text>
         <text
            transform="matrix(1,0,0,-1,39.94,39.82)"
-           id="text140">
+           id="text140"
+           style="line-height:0%">
           <tspan
-             style="font-size:3.74000001px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+             style="font-variant:normal;font-weight:normal;font-size:3.74000001px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              x="0"
              y="0"
              id="tspan142">●</tspan>
@@ -3647,12 +3695,13 @@
              inkscape:connector-curvature="0" />
           <text
              id="text30"
-             transform="matrix(1,0,0,-1,105.04,105.4)">
+             transform="matrix(1,0,0,-1,105.04,105.4)"
+             style="line-height:0%">
             <tspan
                id="tspan32"
                y="0"
                x="0"
-               style="font-size:7.48000002px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats">●</tspan>
+               style="font-variant:normal;font-weight:normal;font-size:7.48000002px;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">●</tspan>
           </text>
           <path
              id="path34-2"
@@ -3663,43 +3712,43 @@
       </g>
       <text
          transform="scale(0.64250057,1.5564188)"
-         sodipodi:linespacing="125%"
          id="text4446"
          y="525.55676"
          x="745.82086"
-         style="font-size:16.20412445px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="525.55676"
            x="745.82086"
            id="tspan4448"
-           sodipodi:role="line">}</tspan></text>
+           sodipodi:role="line"
+           style="font-size:16.20412445px;line-height:1.25">}</tspan></text>
       <text
          transform="matrix(0,-0.64250059,1.5564188,0,0,0)"
-         sodipodi:linespacing="125%"
          id="text4446-3"
          y="320.07455"
          x="-1284.7953"
-         style="font-size:16.20412445px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="320.07455"
            x="-1284.7953"
            id="tspan4448-6"
-           sodipodi:role="line">}</tspan></text>
+           sodipodi:role="line"
+           style="font-size:16.20412445px;line-height:1.25">}</tspan></text>
       <text
-         sodipodi:linespacing="125%"
          id="text4471"
          y="815.03595"
          x="484.23645"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="815.03595"
            x="484.23645"
            id="tspan4473"
-           sodipodi:role="line">pad</tspan></text>
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25">pad</tspan></text>
     </g>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 169.45336,214.67605 c 0,0 6.32627,-29.43603 39.72349,-78.94415 23.78995,-35.26628 55.31118,-44.751781 55.31118,-44.751781"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 169.45336,214.67605 c 0,0 -13.78689,-26.92189 19.61033,-76.43001 23.78995,-35.26628 64.86493,-41.734802 64.86493,-41.734802"
        id="path3770"
        inkscape:connector-curvature="0"
        transform="translate(0,602.35975)"
@@ -3713,78 +3762,87 @@
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="61.345142"
-       y="649.59375"
-       id="text5356"
-       sodipodi:linespacing="125%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="59.345142"
+       y="637.59375"
+       id="text5356"><tspan
          sodipodi:role="line"
-         x="61.345142"
-         y="649.59375"
-         id="tspan5364">Selection of two variables </tspan><tspan
+         x="59.345142"
+         y="637.59375"
+         id="tspan5364"
+         style="font-size:14px;line-height:1.25">Selection of two variables </tspan><tspan
          sodipodi:role="line"
-         x="61.345142"
-         y="667.09375"
-         id="tspan5368">conditional on age and time.</tspan><tspan
+         x="59.345142"
+         y="655.09375"
+         id="tspan5368"
+         style="font-size:14px;line-height:1.25">by age and time.</tspan><tspan
          sodipodi:role="line"
-         x="61.345142"
-         y="684.59375"
+         x="59.345142"
+         y="668.99072"
          id="tspan5792"
-         style="font-size:10px">(possibly from higher dimension dataset)</tspan></text>
+         style="font-size:10px;line-height:1.25">(possibly from higher dimension dataset,</tspan><tspan
+         sodipodi:role="line"
+         x="59.345142"
+         y="681.49072"
+         style="font-size:10px;line-height:1.25"
+         id="tspan823">e.g. HMD countries)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="272.69409"
        y="624.75195"
-       id="text5356-7"
-       sodipodi:linespacing="125%"><tspan
+       id="text5356-7"><tspan
          sodipodi:role="line"
          x="272.69409"
          y="624.75195"
-         id="tspan5400">Determine functional relationship.</tspan></text>
+         id="tspan5400"
+         style="font-size:14px;line-height:1.25">Model relationship</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 449.07788,710.60942 c 0,0 15.13806,23.29824 17.59901,44.75178 2.96281,25.82849 -6.53678,48.7744 -6.53678,48.7744"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 449.07788,710.60942 c 0,0 24.18898,25.30956 26.64993,46.7631 2.96281,25.82849 -4.52546,47.76874 -4.52546,47.76874"
        id="path3770-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="273.52808"
        y="792.49701"
-       id="text5356-7-8"
-       sodipodi:linespacing="125%"><tspan
+       id="text5356-7-8"><tspan
          sodipodi:role="line"
          x="273.52808"
          y="792.49701"
-         id="tspan5400-9">Translate to length, angle, </tspan><tspan
+         id="tspan5512"
+         style="font-size:14px;line-height:1.25">Translate to angle, of field </tspan><tspan
          sodipodi:role="line"
          x="273.52808"
          y="809.99701"
-         id="tspan5512">and curvature of field pointer</tspan></text>
+         style="font-size:14px;line-height:1.25"
+         id="tspan819">pointer <tspan
+   style="font-size:10px"
+   id="tspan829">(also length, color, etc)</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="95.483643"
        y="988.2074"
-       id="text5356-8"
-       sodipodi:linespacing="125%"><tspan
+       id="text5356-8"><tspan
          sodipodi:role="line"
          x="95.483643"
          y="988.2074"
-         id="tspan5368-5">Time</tspan></text>
+         id="tspan5368-5"
+         style="font-size:14px;line-height:1.25">Time</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="3.3335233"
        y="699.67657"
-       id="text5356-8-8"
-       sodipodi:linespacing="125%"><tspan
+       id="text5356-8-8"><tspan
          sodipodi:role="line"
          x="3.3335233"
          y="699.67657"
-         id="tspan5368-5-2">Age</tspan></text>
+         id="tspan5368-5-2"
+         style="font-size:14px;line-height:1.25">Age</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect5542"
@@ -3794,56 +3852,58 @@
        y="870.58289" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="202.25963"
        y="883.94147"
-       id="text5356-7-8-8"
-       sodipodi:linespacing="125%"><tspan
+       id="text5356-7-8-8"><tspan
          sodipodi:role="line"
          x="202.25963"
          y="883.94147"
-         id="tspan5512-2">     Render </tspan><tspan
+         id="tspan5512-2"
+         style="font-size:14px;line-height:1.25">     Draw </tspan><tspan
          sodipodi:role="line"
          x="202.25963"
          y="901.44147"
-         id="tspan5544">     field </tspan><tspan
+         id="tspan5544"
+         style="font-size:14px;line-height:1.25">     field </tspan><tspan
          sodipodi:role="line"
          x="202.25963"
          y="918.94147"
-         id="tspan5540">     pointer</tspan></text>
+         id="tspan5540"
+         style="font-size:14px;line-height:1.25">     pointer</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="36.977581"
-       y="653.20898"
-       id="text5546"
-       sodipodi:linespacing="125%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="34.977581"
+       y="641.20898"
+       id="text5546"><tspan
          sodipodi:role="line"
          id="tspan5548"
-         x="36.977581"
-         y="653.20898">A</tspan></text>
+         x="34.977581"
+         y="641.20898"
+         style="font-size:20px;line-height:1.25">A</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="252.9771"
        y="628.36719"
-       id="text5546-7"
-       sodipodi:linespacing="125%"><tspan
+       id="text5546-7"><tspan
          sodipodi:role="line"
          id="tspan5548-1"
          x="252.9771"
-         y="628.36719">B</tspan></text>
+         y="628.36719"
+         style="font-size:20px;line-height:1.25">B</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="252.59135"
        y="796.31732"
-       id="text5546-7-9"
-       sodipodi:linespacing="125%"><tspan
+       id="text5546-7-9"><tspan
          sodipodi:role="line"
          id="tspan5548-1-1"
          x="252.59135"
-         y="796.31732">C</tspan></text>
+         y="796.31732"
+         style="font-size:20px;line-height:1.25">C</tspan></text>
     <g
        id="g5631"
        transform="translate(0,-2)">
@@ -3855,16 +3915,16 @@
          id="rect5542-7"
          style="fill:#ffffff;fill-opacity:1;stroke:none" />
       <text
-         sodipodi:linespacing="125%"
          id="text5546-7-9-1"
          y="889.69"
          x="202.4281"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="889.69"
            x="202.4281"
            id="tspan5548-1-1-7"
-           sodipodi:role="line">D</tspan></text>
+           sodipodi:role="line"
+           style="font-size:20px;line-height:1.25">D</tspan></text>
     </g>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -3874,24 +3934,26 @@
        x="321.91595"
        y="985.31958" />
     <text
-       sodipodi:linespacing="125%"
        id="text4471-7"
        y="995.836"
        x="325.04028"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="995.836"
          x="325.04028"
          id="tspan4473-2"
-         sodipodi:role="line">reference </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25">reference </tspan><tspan
          y="1008.336"
          x="325.04028"
          sodipodi:role="line"
-         id="tspan5657">radius to </tspan><tspan
+         id="tspan5657"
+         style="font-size:10px;line-height:1.25">radius to </tspan><tspan
          y="1020.836"
          x="325.04028"
          sodipodi:role="line"
-         id="tspan5790">scale length</tspan></text>
+         id="tspan5790"
+         style="font-size:10px;line-height:1.25">scale length</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2,2;stroke-dashoffset:0"
        d="m 386.8425,332.66726 44.08867,0"
@@ -3905,46 +3967,98 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
     <text
-       sodipodi:linespacing="125%"
        id="text4471-7-5"
        y="944.58783"
        x="390.09088"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="944.58783"
          x="390.09088"
          sodipodi:role="line"
-         id="tspan5657-1">translated </tspan><tspan
+         id="tspan5657-1"
+         style="font-size:10px;line-height:1.25">translated </tspan><tspan
          y="957.08783"
          x="390.09088"
          sodipodi:role="line"
-         id="tspan5734">angle</tspan></text>
+         id="tspan5734"
+         style="font-size:10px;line-height:1.25">angle</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text4471-7-5-6"
        y="921.22803"
        x="346.27386"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="921.22803"
          x="346.27386"
          sodipodi:role="line"
-         id="tspan5734-9">Lexis cell</tspan><tspan
+         id="tspan5734-9"
+         style="font-size:10px;line-height:1.25">Lexis cell</tspan><tspan
          y="933.72803"
          x="346.27386"
          sodipodi:role="line"
-         id="tspan5762">centroid</tspan></text>
+         id="tspan5762"
+         style="font-size:10px;line-height:1.25">midpoint</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text4471-7-5-1"
        y="990.06165"
        x="-169.73058"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"
-       transform="matrix(0.8373021,-0.54674052,0.54674052,0.8373021,0,0)"><tspan
+       transform="rotate(-33.143685)"><tspan
          y="990.06165"
          x="-169.73058"
          sodipodi:role="line"
-         id="tspan5734-4">translated length</tspan></text>
+         id="tspan5734-4"
+         style="font-size:10px;line-height:1.25">translated length</tspan></text>
+    <rect
+       style="fill:#ffffff"
+       id="rect821"
+       width="39.723488"
+       height="8.5480928"
+       x="-365.46826"
+       y="637.99664"
+       transform="rotate(-45.38453)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="-361.17627"
+       y="647.66284"
+       id="text793"
+       transform="rotate(-44.944738)"><tspan
+         sodipodi:role="line"
+         id="tspan791"
+         x="-361.17627"
+         y="647.66284">subsets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="332.87277"
+       y="767.75854"
+       id="text797"><tspan
+         sodipodi:role="line"
+         id="tspan795"
+         x="332.87277"
+         y="767.75854">(e.g. life expectancy)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="-759.82581"
+       y="266.65793"
+       id="text797-3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan795-6"
+         x="-759.82581"
+         y="266.65793">(e.g. standard deviation)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="284.6012"
+       y="637.53717"
+       id="text827"><tspan
+         sodipodi:role="line"
+         id="tspan825"
+         x="284.6012"
+         y="637.53717">(e.g. OLS regression)</tspan></text>
   </g>
 </svg>
