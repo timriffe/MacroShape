@@ -6,9 +6,9 @@ library(RColorBrewer)
 library(colorspace)
 # hcl_palettes(plot=TRUE)
 rm(list = ls(all.names = TRUE))
-source(here("MacroShape","DR","Manuscript","R","ApplicationFunctions.R"))
+source(here("R","ApplicationFunctions.R"))
 
-Dat          <- readRDS(here("MacroShape","Data","HMDresults.rds"))
+Dat          <- readRDS(here("Data","HMDresults.rds"))
 
 Dat$SD       <- sqrt(Dat$Var)
 
@@ -35,31 +35,8 @@ width  <- xr * scalef + .4 # .4 inch total margins
 height <- yr * scalef + .4
 
 
-pdf(here("MacroShape","DR","Manuscript","Figures","FigApp1.pdf"), width = width, height = height)
-par(mai=c(.3,.3,.1,.1))
-plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
-		panel.first = list(
-				rect(1950,0,2020,105,border = NA,col = gray(.92)),
-				segments(seq(1950,2020,by=5),0,seq(1950,2015,by=5),105,col="white"),
-				segments(1950,seq(0,105,by=5),2020,seq(0,105,by=5),col="white"),
-				text(seq(1950,2015,by=10),0,seq(1950,2015,by=10),pos=1,xpd=TRUE,cex=1.2),
-				text(1950,seq(0,100,by=10),seq(0,100,by=10),pos=2,xpd=TRUE,cex=1.2)))
-#plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1)
-for (i in 1:nrow(Fem)){
-	x <- Fem[i,]
-	draw_field_element(
-			age = x$Age,    # lower bound of cell age
-			year = x$Year5,   # lower bound of cell year
-			interval = 5,  # cell dimension
-			slope = x$b,  # slope of regression or whatever
-			length = 1, # default meaning = interval - (2*pad)
-			pad = .5,   # edge pad if length = 1 and slope = 0 or Inf
-			lambda =  1)
-}
-dev.off()
-
-pdf(here("MacroShape","DR","Manuscript","Figures","FigApp2.pdf"), width = width, height = height)
-par(mai=c(.3,.3,.1,.1))
+pdf(here("Figures","FigApp1.pdf"), width = width, height = height)
+par(mai=c(.3,.4,.1,0))
 plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
 				rect(1950,0,2020,105,border = NA,col = gray(.92)),
@@ -75,18 +52,22 @@ for (i in 1:nrow(Fem)){
 			year = x$Year5,   # lower bound of cell year
 			interval = 5,  # cell dimension
 			slope = x$b,  # slope of regression or whatever
-			length = abs(x$rp), # default meaning = interval - (2*pad)
-			pad = 0,   # edge pad if length = 1 and slope = 0 or Inf
+			length = 1, # default meaning = interval - (2*pad)
+			pad = .5,   # edge pad if length = 1 and slope = 0 or Inf
 			lambda =  1)
 }
+text(1944, 55, "Age",srt = 90, cex = 1.5, xpd=TRUE)
+text(1985,-5,"Year",cex = 1.5, xpd=TRUE)
 dev.off()
 
+
+
+# ----------------------------------------
+# Figure 3
 grayrange <- c(0,.7)
 
-range(Fem$iqrdiag)
-		
-pdf(here("MacroShape","DR","Manuscript","Figures","FigApp3.pdf"),width=width,height=height)
-par(mai=c(.3,.3,.1,.1))
+pdf(here("Figures","FigApp2.pdf"),width=width,height=height)
+par(mai=c(.3,.4,.1,0))
 plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
 				rect(1950,0,2020,105,border = NA,col = gray(.92)),
@@ -108,11 +89,14 @@ for (i in 1:nrow(Fem)){
 			lwd = .5 + 2*abs(x$rsq),
 			xpd=TRUE)
 }
+text(1944, 55, "Age",srt = 90, cex = 1.5, xpd=TRUE)
+text(1985,-5,"Year",cex = 1.5, xpd=TRUE)
 dev.off()
 
-Fem
+# ----------------------------------------
+# Figure 4
 # what about where the background is the mean CV?
-Dat          <- readRDS(here("MacroShape","Data","HMDresults.rds"))
+Dat          <- readRDS(here("Data","HMDresults.rds"))
 Dat          <- Dat[Dat$Age < 105]
 Dat          <- Dat[Dat$Year >= 1950]
 Dat          <- data.table(Dat)
@@ -131,10 +115,10 @@ breaks       <- pretty(lx, 25)
 #ramp         <- colorRampPalette(rev(brewer.pal(9, "YlOrRd")), space = "Lab")
 cols         <- sequential_hcl(length(breaks)-1,"PinkYl")
 
-pdf(here("MacroShape", "DR", "Manuscript", "Figures", "FigApp4.pdf"), 
+pdf(here("Figures", "FigApp3.pdf"), 
     width = width, 
     height = height)
-par(mai=c(.3,.3,.1,.1))
+par(mai=c(.3,.4,.1,0))
 plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
 				rect(1950,0,2020,105,border = NA,col = gray(.92)),
@@ -171,9 +155,42 @@ for (i in 1:nrow(Fem)){
     lwd = .5 + 2*abs(x$rsq),
     xpd=TRUE)
 }
+text(1944, 55, "Age",srt = 90, cex = 1.5, xpd=TRUE)
+text(1985,-5,"Year",cex = 1.5, xpd=TRUE)
 dev.off()
 
+# ----------------------------------------
+# Deprecated
+# ----------------------------------------
+# 
+# pdf(here("Figures","FigApp2.pdf"), width = width, height = height)
+# par(mai=c(.3,.3,.1,.1))
+# plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
+#      panel.first = list(
+#        rect(1950,0,2020,105,border = NA,col = gray(.92)),
+#        segments(seq(1950,2020,by=5),0,seq(1950,2020,by=5),105,col="white"),
+#        segments(1950,seq(0,105,by=5),2020,seq(0,105,by=5),col="white"),
+#        text(seq(1950,2015,by=10),0,seq(1950,2015,by=10),pos=1,xpd=TRUE,cex=1.2),
+#        text(1950,seq(0,100,by=10),seq(0,100,by=10),pos=2,xpd=TRUE,cex=1.2)))
+# #plot(NULL, type = "n", xlim = c(1950,2015), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1)
+# for (i in 1:nrow(Fem)){
+#   x <- Fem[i,]
+#   draw_field_element(
+#     age = x$Age,    # lower bound of cell age
+#     year = x$Year5,   # lower bound of cell year
+#     interval = 5,  # cell dimension
+#     slope = x$b,  # slope of regression or whatever
+#     length = abs(x$rp), # default meaning = interval - (2*pad)
+#     pad = 0,   # edge pad if length = 1 and slope = 0 or Inf
+#     lambda =  1)
+# }
+# dev.off()
 
+
+
+# ------------------------------------------------------
+# Deprecated
+# ------------------------------------------------------
 # # experiment to see how fine the grid can be
 # Dat          <- data.table(Dat) 
 # Dat$SD       <- sqrt(Dat$Var)

@@ -43,7 +43,7 @@ LT   <- data.table(LT)
 # Re-Run this script for the final version to regenerate clean results on latest data.
 attr(LT,"timestamp") <- Sys.Date()
 # save out for repeated use
-saveRDS(LT, file = here("MacroShape","Data","HMDltper.rds"))
+saveRDS(LT, file = here("Data","HMDltper.rds"))
 }
 # -----------------------------------------------------------------
 # L-moment-related: "getB0b_ta", "getB1b_ta", "getB2b_ta", "getL2b_ta", 
@@ -71,7 +71,7 @@ LT[, q50   := getQuantile(dx,.5),  by = list(CNTRY, Sex, Year)] # er, median
 LT[, q75   := getQuantile(dx,.75), by = list(CNTRY, Sex, Year)]
 LT[, Mode  := getMode(dx),         by = list(CNTRY, Sex, Year)]
 
-saveRDS(LT, file = here("MacroShape","Data","HMDresults.rds"))
+saveRDS(LT, file = here("Data","HMDresults.rds"))
 #head(LT)
 #str(LT)
 print(object.size(LT),units="Mb") # 185.1 Mb 
