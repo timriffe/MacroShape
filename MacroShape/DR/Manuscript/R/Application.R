@@ -140,7 +140,8 @@ contour(1950.5:2018.5, .5:104.5,
 		xlim=c(1950,2018),
 		ylim=c(0,105),
 		asp=1,
-		add=TRUE)
+		add=TRUE,
+		labcex = 1)
 for (i in 1:nrow(Fem)){
   x <- Fem[i,]
   draw_field_element(
