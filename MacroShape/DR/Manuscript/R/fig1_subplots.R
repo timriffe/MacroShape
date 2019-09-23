@@ -1,7 +1,5 @@
 # subplots of Figure 1, combined in Inkscape, where annotation is added.
-library(here)
-source(here("R","functions.R"))
-# 1)
+
 # generic relationship conditioned on a particular age and time.
 # y = m*x+b
 set.seed(1)
@@ -24,7 +22,7 @@ segments(0,min(y),0,max(y),lwd=1.5)
 dev.off()
 
 
-# possibly add angle element to this
+# generic pointer
 pdf(here("Figures","GenericFieldElement.pdf"),width=3,height=3)
 par(mai=c(.1,.1,.1,.1))
 plot(NULL, type = "n", xlim = c(0,1), ylim = c(0,1), xlab = "", ylab = "", axes = FALSE, asp = 1)
@@ -40,7 +38,7 @@ dev.off()
 
 
 # ------------------------
-
+# lexis grid on left
 years               <- seq(1950, 2015, by = 5)
 ages                <- seq(0, 100, by = 5)
 
@@ -71,7 +69,4 @@ rect(2000,50,2005,55,border=gray(.2))
 rect(min(years),min(ages), max(years), max(ages),xpd=TRUE)
 dev.off()
 
-
-
-
-
+# end

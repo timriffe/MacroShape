@@ -11,19 +11,20 @@ if (!require("pacman", character.only = TRUE)){
     stop("Package not found")
 }
 
-# library(data.table)
-# library(reshape2)
-# library(here)
-# library(RColorBrewer)
-# library(colorspace)
-# these are the required packages
+# Some packages to install from CRAN:
 pkgs <- c(
-
+  "here",
+  "HMDHFDplus",
+  "data.table",
+  "reshape2",
+  "colorspace",
+  "devtools"
 )
 
+# A package to install from github:
 gphgs <- c("DistributionTTD")
 
-# install the missing packages
+# install the missing packages from CRAN
 # only runs if at least one package is missing
 if(!sum(!p_isinstalled(pkgs))==0){
   p_install(
@@ -32,6 +33,14 @@ if(!sum(!p_isinstalled(pkgs))==0){
   )
 }
 
+# install from github if necessary
+if (!p_isinstalled(gphgs)){
+  library(devtools)
+  install_github("timriffe/DistributionTTD", subdir = "DistributionTTD/R/DistributionTTD")
+}
+
 # load the packages
 p_load(pkgs, character.only = TRUE)
+p_load(gphgs, character.only = TRUE)
 
+# end
