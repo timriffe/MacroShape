@@ -55,7 +55,7 @@ It makes sense to plot a Lexis field if data contain a relationship that can be 
 
 (ref:one)  A diagram depicting the translation of functional relationships in data conditioned on age and time to visual encoding on a Lexis field. **A**: Condition data selection on age and time. **B**: Fit a model (e.g. bivariate linear) to the data subset. **C**: Translate the model to field elements, `pointers', using angle, and possibly also length, curvature, thickness, etc. to represent model qualities. **D**: Populate the Lexis plane with field pointers to create a Lexis field.
 ```{r, one, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:one)", out.width="100%", echo=FALSE}
-include_graphics("Figures/ExplainerDiagram.pdf")
+include_graphics("Figures/Fig1.pdf")
 ```
 \FloatBarrier
 
@@ -67,21 +67,21 @@ The first of these, Fig. \@ref(fig:two), is a bare-bones Lexis field that serves
 
 (ref:two) Lexis field: $e(x)$ by $sd(x)$ linear fits, with slopes drawn equal to the slope of the regression. Pointer lengths are all equal.
 ```{r, two, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:two)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/FigApp1.pdf")
+include_graphics("Figures/Fig2.pdf")
 ```
 
 The second version, Fig. \@ref(fig:three), draws the same pointers with slopes multiplied by two. Pointer lengths are scaled proportional to the between-population interquartile range of the $e(x)$ and $sd(x)$ values used in regressions^[Specifically, pointer length is proportional to the central spread of the relationship between $e(x)$ and $sd(x)$, approximated as $\sqrt{IQR(e(x))^2 + IQR(sd(x))^2}$]. Line weight and grayscale are proportional to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher $r^2$ results in darker and thicker pointers. 
 
 (ref:three) Lexis field:$e(x)$ by $sd(x)$ linear fits, with slopes exaggerated by 2. Pointer length is proportional to the diagonal of the IQR box around $sd(x)$ and $e(x)$, while grayscale and segment width are proportional to $r^2$ (darker and thicker = higher $r^2$).
 ```{r, three, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:three)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/FigApp2.pdf")
+include_graphics("Figures/Fig3.pdf")
 ```
 
 The final example, Fig. \@ref(fig:four) is a layered Lexis map. The base of the map is a filled contour plot of the mean (over HMD populations) of the lifetable survivorship column $\ell(x)$ in each age and year ($1 \times 1$ cells), converted to proportions. This quantity is interpreted as the probability of surviving from birth until at least age $x$, which means that contours in the Lexis map are interpreted as survivorship quantiles. The survivorship surface is redundantly drawn with a sequential color palette and labelled contours. Darker hues indicate lower surival probabilities. The same field from Fig. \@ref(fig:four) is layered atop the survivorship quantile surface. 
 
 (ref:four) A Lexis map: Lexis surface of mean survivorship quantiles as a filled contour plot plus a Lexis field of $e(x)$ by $sd(x)$ linear fits, slopes exaggerated by 2. Pointer length is proportional to the diagonal of the IQR box around $e(x)$ by $sd(x)$, while grayscale and segment width are proportional to $r^2$. 
 ```{r, four, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:four)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/FigApp3.pdf")
+include_graphics("Figures/Fig4.pdf")
 ```
 \FloatBarrier
 
@@ -103,7 +103,8 @@ We describe the construction and use of vector fields on the Lexis plane. We arg
 # Reproducibility
 Calculations and visualizations in this manuscript were all done in the R programming language [@R]. Code used to produce the experimental visualizations here is available in a public repository: 
 
-\url{https://github.com/timriffe/MacroShape/DR}
+(Anonymous repository for review purposes)
+\url{https://osf.io/gzk9m/?view_only=622d62815eb0405db90b32bdc691dbc2}
 
 # Acknowledgements
 We wish to thank Alyson van Raalte and three anonymous reviewers for helpful comments received that improved this manuscript.

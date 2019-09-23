@@ -82,5 +82,5 @@ draw_field_element <- function(
 	#segments(x1,y1,x2,y2)
 	
 }
-
+cat("extra functions loaded, move on to next step\n")
 # end

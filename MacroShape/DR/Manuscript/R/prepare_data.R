@@ -1,6 +1,11 @@
 # produce HMD master datafile, add variance column
 
-download_HMD <- FALSE
+# Create Data folder if needed
+if (!file.exists("Data")){
+  dir.create("Data")
+}
+
+# flag set in master.R
 if (download_HMD){
 Countries <- getHMDcountries() # returns vector of HMD country codes
 
@@ -33,6 +38,7 @@ saveRDS(LT, file = here("Data","HMDltper.rds"))
 # To reduce run time, only Var is calculated. Other columns are cool for 
 # exploratory reasons, but not strictly needed here.
 LT <- readRDS(here("Data","HMDresults.rds"))
+cat("calculating variance column\n")
 LT[, Var   := momentN(dx,2,ax),    by = list(CNTRY, Sex, Year)]
 
 # These calcs might take a while.
@@ -55,6 +61,7 @@ LT[, Var   := momentN(dx,2,ax),    by = list(CNTRY, Sex, Year)]
 saveRDS(LT, file = here("Data","HMDresults.rds"))
 #head(LT)
 #str(LT)
+cat("Data/HMDresults.rds file saved!\n")
 print(object.size(LT),units="Mb") # 185.1 Mb 
-
+cat("move on to next step\n")
 # end

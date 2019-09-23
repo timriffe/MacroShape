@@ -14,12 +14,13 @@ pw <- "HMD password" # change to your HMD password
 # to Windows users without Rtools installed). Also HMDHFDplus requires
 # XML and ssl and stuff like that, usually already installed, but will choke
 # (and give informative error) if missing.
-source(here("R","prepare_session.R"))
+source(file.path("R","prepare_session.R"))
 
 # load custom functions
 source(here("R","functions.R"))
 
-# check if HMD already downloaded, set flag
+# check if HMD already downloaded, set flag. If you already have this 
+# file then let's not download it again!
 download_HMD <- !file.exists(here("Data","HMDltper.rds"))
 # If the file isn't there, then it will be created.
 # a new column for VAR added in any case

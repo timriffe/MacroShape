@@ -36,8 +36,9 @@ width  <- xr * scalef + .4 # .4 inch total margins
 height <- yr * scalef + .4
 
 # ----------------------------------------
+cat("creating figure 2\n")
 # Figure 2
-pdf(here("Figures","FigApp1.pdf"), width = width, height = height)
+pdf(here("Figures","Fig2.pdf"), width = width, height = height)
 par(mai=c(.3,.4,.1,0))
 plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
@@ -67,8 +68,8 @@ dev.off()
 # ----------------------------------------
 # Figure 3
 grayrange <- c(0,.7)
-
-pdf(here("Figures","FigApp2.pdf"),width=width,height=height)
+cat("creating figure 3\n")
+pdf(here("Figures","Fig3.pdf"),width=width,height=height)
 par(mai=c(.3,.4,.1,0))
 plot(NULL, type = "n", xlim = c(1950,2020), ylim = c(0,105), axes = FALSE, xlab = "", ylab = "", asp = 1, 
 		panel.first = list(
@@ -97,6 +98,8 @@ dev.off()
 
 # ----------------------------------------
 # Figure 4
+cat("creating figure 4\n")
+
 Dat          <- readRDS(here("Data","HMDresults.rds"))
 Dat          <- Dat[Dat$Age < 105]
 Dat          <- Dat[Dat$Year >= 1950]
@@ -108,7 +111,7 @@ breaks       <- pretty(lx, 25)
 
 cols         <- sequential_hcl(length(breaks)-1,"PinkYl")
 
-pdf(here("Figures", "FigApp3.pdf"), 
+pdf(here("Figures", "Fig4.pdf"), 
     width = width, 
     height = height)
 par(mai=c(.3,.4,.1,0))
@@ -152,5 +155,7 @@ for (i in 1:nrow(Fem)){
 text(1944, 55, "Age",srt = 90, cex = 1.5, xpd=TRUE)
 text(1985,-5,"Year",cex = 1.5, xpd=TRUE)
 dev.off()
+
+cat("See figures in Figures/ folder\nAll done.")
 
 # end

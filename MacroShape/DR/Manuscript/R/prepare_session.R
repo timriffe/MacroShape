@@ -43,4 +43,5 @@ if (!p_isinstalled(gphgs)){
 p_load(pkgs, character.only = TRUE)
 p_load(gphgs, character.only = TRUE)
 
+cat("packages installed and loaded, move on to next step\n")
 # end
