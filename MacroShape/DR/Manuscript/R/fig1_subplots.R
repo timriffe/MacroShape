@@ -1,6 +1,6 @@
 # subplots of Figure 1, combined in Inkscape, where annotation is added.
 library(here)
-source(here("R","LexisFieldFunctions.R"))
+source(here("R","functions.R"))
 # 1)
 # generic relationship conditioned on a particular age and time.
 # y = m*x+b

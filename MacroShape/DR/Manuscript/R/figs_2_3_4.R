@@ -1,12 +1,8 @@
 #######################################################################
-library(data.table)
-library(reshape2)
-library(here)
-library(RColorBrewer)
-library(colorspace)
+
 # hcl_palettes(plot=TRUE)
 rm(list = ls(all.names = TRUE))
-source(here("R","ApplicationFunctions.R"))
+source(here("R","functions.R"))
 
 Dat          <- readRDS(here("Data","HMDresults.rds"))
 
