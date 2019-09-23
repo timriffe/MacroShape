@@ -103,8 +103,8 @@ We describe the construction and use of vector fields on the Lexis plane. We arg
 # Reproducibility
 Calculations and visualizations in this manuscript were all done in the R programming language [@R]. Code used to produce the experimental visualizations here is available in a public repository: 
 
-(Anonymous repository for review purposes)
-\url{https://osf.io/gzk9m/?view_only=622d62815eb0405db90b32bdc691dbc2}
+  (Anonymous repository for review purposes)
+  \url{https://osf.io/gzk9m/?view_only=622d62815eb0405db90b32bdc691dbc2}
 
 # Acknowledgements
 We wish to thank Alyson van Raalte and three anonymous reviewers for helpful comments received that improved this manuscript.
