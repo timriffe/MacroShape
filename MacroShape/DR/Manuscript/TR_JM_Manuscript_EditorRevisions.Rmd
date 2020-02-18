@@ -9,7 +9,8 @@ output:
      fig_caption: yes
      keep_tex: yes
 header-includes: 
-- \usepackage{placeins}
+   - \usepackage{placeins}
+   - \usepackage{subfig}
 bibliography: [references.bib]
 background: |
   Lexis surfaces are a visualization technique designed to show how a given value changes over age and time. Vector fields are a two-dimensional representation of two variables: usually direction and speed (or force).
@@ -43,45 +44,48 @@ We give an overview of constructing a Lexis field with an application. Our examp
 
 # Lexis field construction
 
-It makes sense to plot a Lexis field if data contain a relationship that can be summarized with a line, a simple curve, or similar, that varies by age and/or time. All demographic forces (health, fertility, mortality, migration, and others) vary by age and time, and so any two variables produce a relationship that varies over age and time. For example, health behaviors and mortality outcomes might be thought to have a relationship that changes over age and time. Constructing a Lexis field involves several design choices, which can be codified into four basic steps. These steps to do so are outlined in the following description, referenced to regions of Fig. \@ref(fig:one).
+It makes sense to plot a Lexis field if data contain a relationship that can be summarized with a line, a simple curve, or similar, that varies by age and/or time. Our primary example is drawn from two lifetable functions whose relationship varies over age and time. In general Lexis fields are a usable graphical instrument whenever one has two continuous variables (of any kind) in comparable intervals on the Lexis diagram. Constructing a Lexis field involves three main steps that are outlined in Fig. \@ref(fig:one).
 
->**A** Determine a grid over age and time on which to condition data selection. For example, a five-year grid implies $5\times 5$ Lexis cells. Data may be selected from multiple populations on the same reference grid or may consist in a selection of attributes from a single underlying Lexis surface. Presumably two variables are required.
+>**A** Select two or more variables in a given interval of age and time. In our example we have two lifetable variables, remaining life expectancy $e(x)$ and the standard deviation of remaining lifespan $sd(x)$.
 
->**B** Abstract a model from the data, such as a linear, parabolic, or similarly simple relationship.
+>**B** Abstract a model from the data within each combination of age and time. For our example we fit bivariate linear models to each age-time subset.
 
->**C** Translate the model to the characteristics of a line segment, which we refer to as a field *pointer*. For example, the pointer angle can relate to the model relationship, and length and color may be determined by other aspects of the model, such as $r^2$ or the Pearson's correlation coefficient.
+>**C** Translate the model to the characteristics of a line segment, which we refer to as a field *pointer*. For example, the pointer angle can relate to the model relationship (e.g. slope coefficient), and length and color may be determined by other aspects of the model, such as $r^2$ or the Pearson's correlation coefficient. We provide three examples of such translations.
 
->**D** Draw the segment in the corresponding Lexis grid cell, repeating all steps for each cell in the diagram. 
+Repeat this for each age-time subset in the data. A Lexis diagram filled with such pointers is a Lexis field. 
 
-(ref:one)  A diagram depicting the translation of functional relationships in data conditioned on age and time to visual encoding on a Lexis field. **A**: Condition data selection on age and time. **B**: Fit a model (e.g. bivariate linear) to the data subset. **C**: Translate the model to field elements, `pointers', using angle, and possibly also length, curvature, thickness, etc. to represent model qualities. **D**: Populate the Lexis plane with field pointers to create a Lexis field.
-```{r, one, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:one)", out.width="100%", echo=FALSE}
-include_graphics("Figures/Fig1.pdf")
+(ref:one)  A diagram depicting the translation of functional relationships in data conditioned on age and time to visual encoding on a Lexis field. 
+```{r, one, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:one)", out.width="80%", echo=FALSE}
+include_graphics("Figures/Fig1-crop.pdf")
 ```
 \FloatBarrier
 
 # Application
 
-We select all HMD data available for females after 1950. For each life table we calculate an extra column for the standard deviation of remaining lifespan $sd(x)$. Each Lexis field element is based on the relationship between remaining life expectancy $e(x)$ and $sd(x)$ in $1\times 5$ Lexis cells ^[Data points included in regressions are single ages evenly divisible by five for each of the five years included in a Lexis reference cell.], as summarized by bivariate linear regression over the data points in each cell. The regression results used for each Lexis cell in resulting Lexis fields are identical, but the translation of regressions to field pointers varies between designs. We offer three examples of Lexis field designs, each using $5\times 5$ Lexis subplots.
+We select period lifetables from all HMD countries for females after 1950 (files `fltper_1x1`). Our example uses remaining life expectancy $e(x)$ as-is from these files, as well as the standard deviation of remaining lifespan $sd(x)$, which we calculate. Each pointer in the resulting fields is based on the relationship between remaining life expectancy $e(x)$ and $sd(x)$ as summarized by a bivariate linear regression over the data points from the first single age in each $5\times 5$ age-time Lexis interval^[For example, the pointer in the Lexis cell for years 1950-1954 and ages 0-4 is based on the model fit to data points from each of the five single years in this interval, and only in the first year of life. In higher ages, only single ages evenly divisible by five are included in regressions.] This limited point selection serves to preserve the sharp change in slope between infants and age five.
+
+We now introduce three alternative configurations of Lexis fields for our example application. Each configuration differs only in the translation of model fits to field pointers. The regression results used for each Lexis cell in resulting Lexis fields are identical, but the translation of regressions to field pointers varies between designs. 
 
 The first of these, Fig. \@ref(fig:two), is a bare-bones Lexis field that serves to illustrate the underlying concept. This display draws each regression slope as a line segment of equal length (4 ``years'' long) and centered on each Lexis cell. The slope of each pointer is identical to regression slopes, which may be justified in this case because $e(x)$ and $sd(x)$ are both in year units. This is the truest and most literal depiction of how these regression slopes vary over age and time among females. From this figure we can see, for example, that there is some age where the relationship turns from negative to positive, which increased slightly over time. Slopes dampened in younger ages around the 1980s, but have since increased (except infants).
 
 (ref:two) Lexis field: $e(x)$ by $sd(x)$ linear fits, with slopes drawn equal to the slope of the regression. Pointer lengths are all equal.
 ```{r, two, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:two)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/Fig2.pdf")
+include_graphics("Figures/Fig2-crop.pdf")
 ```
 
 The second version, Fig. \@ref(fig:three), draws the same pointers with slopes multiplied by two. Pointer lengths are scaled proportional to the between-population interquartile range of the $e(x)$ and $sd(x)$ values used in regressions^[Specifically, pointer length is proportional to the central spread of the relationship between $e(x)$ and $sd(x)$, approximated as $\sqrt{IQR(e(x))^2 + IQR(sd(x))^2}$]. Line weight and grayscale are proportional to the $r^2$ of the regression fit. Segment lengths are therefore indicative of the spread in the data, while higher $r^2$ results in darker and thicker pointers. 
 
-(ref:three) Lexis field:$e(x)$ by $sd(x)$ linear fits, with slopes exaggerated by 2. Pointer length is proportional to the diagonal of the IQR box around $sd(x)$ and $e(x)$, while grayscale and segment width are proportional to $r^2$ (darker and thicker = higher $r^2$).
-```{r, three, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:three)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/Fig3.pdf")
+(ref:three) Lexis field:$e(x)$ by $sd(x)$ linear fits, with slopes exaggerated by 2. 
+```{r, three, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:three)", out.width="80%", echo=FALSE,fig.align="center",fig.subcap = "test subcaption"}
+include_graphics("Figures/Fig3-crop.pdf")
 ```
+Pointer length is proportional to the diagonal of the IQR box around $sd(x)$ and $e(x)$, while grayscale and segment width are proportional to $r^2$ (darker and thicker = higher $r^2$).
 
-The final example, Fig. \@ref(fig:four) is a layered Lexis map. The base of the map is a filled contour plot of the mean (over HMD populations) of the lifetable survivorship column $\ell(x)$ in each age and year ($1 \times 1$ cells), converted to proportions. This quantity is interpreted as the probability of surviving from birth until at least age $x$, which means that contours in the Lexis map are interpreted as survivorship quantiles. The survivorship surface is redundantly drawn with a sequential color palette and labelled contours. Darker hues indicate lower surival probabilities. The same field from Fig. \@ref(fig:four) is layered atop the survivorship quantile surface. 
+The final example, Fig. \@ref(fig:four) is a Lexis field from Fig. \@ref(fig:three) is overlayed on a Lexis surface drawn as a filled contour plot. The base layer of the Lexis space is a filled contour plot of the mean (over female HMD populations) of the lifetable survivorship column $\ell(x)$ in each age and year ($1 \times 1$ cells), converted to proportions. This quantity is interpreted as the probability of surviving from birth until at least age $x$, which means that contours are interpreted as survivorship quantiles. The survivorship surface is redundantly drawn with a sequential color palette and labelled contours. Darker hues indicate lower surival probabilities. 
 
 (ref:four) A Lexis map: Lexis surface of mean survivorship quantiles as a filled contour plot plus a Lexis field of $e(x)$ by $sd(x)$ linear fits, slopes exaggerated by 2. Pointer length is proportional to the diagonal of the IQR box around $e(x)$ by $sd(x)$, while grayscale and segment width are proportional to $r^2$. 
 ```{r, four, fig.pos="!t", fig.margin = FALSE, fig.cap = "(ref:four)", out.width="80%", echo=FALSE,fig.align="center"}
-include_graphics("Figures/Fig4.pdf")
+include_graphics("Figures/Fig4-crop.pdf")
 ```
 \FloatBarrier
 
