@@ -1,6 +1,8 @@
 ---
 title: "Lexis Fields"
-author: "(authors redacted)"
+author:
+  - 'Tim Riffe^[Max Planck Institute for Demographic Research, Rostock, Germany. Correspondence: <riffe@demogr.mpg.de>.]'
+  - 'José Manuel Aburto^[Interdisciplinary Centre on Population Dynamics, University of Southern Denmark, Odense, Denmark; Max Planck Institute for Demographic Research, Rostock, Germany. Correspondence: <jmaburto@sdu.dk>.]'
 output: 
   bookdown::pdf_book:
      template: demogre.tex
@@ -66,7 +68,7 @@ include_graphics("Figures/Fig1-crop.pdf")
 
 We select single-age period lifetables from all HMD countries for females after 1950 (files `fltper_1x1`). Our example uses remaining life expectancy $e(x)$ as-is from these files, as well as the standard deviation of remaining lifespan $sd(x)$, which we calculate. Each pointer in the resulting fields is based on the relationship between remaining life expectancy $e(x)$ and $sd(x)$ as summarized by a bivariate linear regression over the data points from the first single age in each $5\times 5$ age-time Lexis interval^[For example, the pointer in the Lexis cell for years 1950-1954 and ages 0-4 is based on the model fit to data points from each of the five single years in this interval, and only in the first year of life. In higher ages, only single ages evenly divisible by five are included in regressions.]. This limited point selection serves to preserve the sharp change in slope between infants and age five.
 
-We now introduce three alternative configurations of Lexis fields for our example application. Each configuration differs only in the translation of model fits to field pointers. The regression results used for each Lexis cell in resulting Lexis fields are identical, but the translation of regressions to field pointers varies between designs. 
+We now introduce three alternative configurations of Lexis fields for our example application. The regression results used for each Lexis cell in resulting Lexis fields are identical, and each configuration differs only in the translation of model fits to field pointers.
 
 The first of these, Fig. \@ref(fig:two), is a bare-bones Lexis field that serves to illustrate the underlying concept. This display draws each regression slope as a line segment of equal length (4 ``years'' long) and centered on each Lexis cell. The slope of each pointer is identical to regression slopes, which may be justified in this case because $e(x)$ and $sd(x)$ are both in year units. This is the truest and most literal depiction of how these regression slopes vary over age and time among females. From this figure we can see, for example, that there is some age where the relationship turns from negative to positive, which increased slightly over time. Slopes dampened in younger ages around the 1980s, but have since increased (except infants).
 
@@ -114,17 +116,15 @@ Fig.\@ref(fig:four) serves to illustrate that Lexis fields can be layered with t
 Potential future applications of Lexis fields  Fields could also be derived from a single underlying pattern rather than a series of regressions on different populations or variables. For example, @shang2018visualizing recommends the use of phase diagrams to represent the rate of change of the hypothetical life course implied by period fertility curves. This construct could be translated to a Lexis field in a straightforward way, with pointers mapping to the notions of acceleration and velocity. Certainly variants of vector fields could be used to intuitively display other demographic phenomena and components of demographic change. For example, changes in the relationship between male and female fertility rates over age and time could be shown with a Lexis field. Other well-known relationships, such as the *Preston curve* [@preston1975changing] or *Taylor's Law* [@cohen2018gompertz], might also lend themselves to Lexis field representation. 
 
 # Conclusions
-We describe the construction and use of vector fields on the Lexis plane. We argue that this technique can increase the information density and scope displayed on the Lexis surface. We also argue that Lexis fields are easily overlayed on Lexis surfaces drawn as filled contour plots. We suggest alternative field designs and uses that could be easily applied for other demographic processes and research questions. In sum, displaying a larger variety of demographic quantities and increasing the information density on the Lexis plane using fields can broaden the scope of demographic exploration and sharpen the instruments of demographic pattern detection.
+We describe the construction and use of vector fields on the Lexis plane. We argue that this technique can increase the information density and scope displayed on the Lexis surface. We also show that Lexis fields can be overlayed on Lexis surfaces drawn as filled contour plots. We suggest alternative field designs and uses that could be  applied for other demographic processes and research questions. In sum, displaying a larger variety of demographic quantities and increasing the information density on the Lexis plane using fields can broaden the scope of demographic exploration and sharpen the instruments of demographic pattern detection.
 
 # Reproducibility
 Calculations and visualizations in this manuscript were all done in the R programming language [@R]. Code used to produce the experimental visualizations here is available in a public repository: 
 
-  (Anonymous repository for review purposes)
-  
-  \url{https://osf.io/gzk9m/?view_only=622d62815eb0405db90b32bdc691dbc2}
+  \url{https://github.com/timriffe/MacroShape}
 
 # Acknowledgements
-We wish to thank Alyson van Raalte and three anonymous reviewers for helpful comments received that improved this manuscript.
+We wish to thank Alyson van Raalte, Nikola Sander, and three anonymous reviewers for helpful comments received that improved this manuscript.
 
 \clearpage
 
